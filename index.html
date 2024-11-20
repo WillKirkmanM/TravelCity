@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel City | Explore Holiday Rentals Across Different Countries</title>
+  <link rel="icon" href="./assets/images/logo.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="relative h-auto md:h-1/4 pb-4 md:pb-8">
+    <div class="relative z-10">
+      <nav class="flex items-center justify-between px-4 py-2">
+        <a href="">
+          <img src="./assets/images/logo.png" class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
+        </a>
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="text-sm hover:text-purple-600 transition-colors">Travel City near you</a>
+          <button class="hover:text-purple-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-globe">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+              <path d="M2 12h20" />
+            </svg>
+          </button>
+          <button class="flex items-center">
+            <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile"
+              class="w-8 h-8 md:w-10 md:h-10 rounded-full" />
+          </button>
+        </div>
+        <button class="md:hidden text-gray-700 p-2" onclick="toggleMobileMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+
+      <div class="hidden md:hidden bg-white absolute top-full left-0 right-0 shadow-lg p-4">
+        <a href="#" class="block py-2 text-sm">Travel City near you</a>
+        <hr class="my-2">
+        <div class="flex items-center space-x-4 py-2">
+          <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile" class="w-8 h-8 rounded-full" />
+          <span class="text-sm">My Profile</span>
+        </div>
+      </div>
+
+      <div class="px-4 pt-4">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-center mb-8">Find Your Next Stay</h1>
+        <div
+          class="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm rounded-2xl md:rounded-full border-2 border-gray-300/50 shadow-xl py-2 px-2 md:px-4">
+          <form class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
+            <div class="flex flex-col md:border-r border-gray-200 p-2">
+              <label class="text-xs md:text-sm text-gray-700 mb-1 ml-2">Location</label>
+              <input type="text" placeholder="Where are you going?"
+                class="w-full p-2 border-none rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-600" />
+            </div>
+            <div class="flex flex-col md:border-r border-gray-200 p-2">
+              <label class="text-xs md:text-sm text-gray-700 mb-1 ml-2">Check in</label>
+              <input type="date" placeholder="Add Date"
+                class="w-full p-2 border-none rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-600" />
+            </div>
+            <div class="flex flex-col md:border-r border-gray-200 p-2">
+              <label class="text-xs md:text-sm text-gray-700 mb-1 ml-2">Check out</label>
+              <input type="date" placeholder="Add Date"
+                class="w-full p-2 border-none rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-600" />
+            </div>
+            <div class="flex flex-col p-2">
+              <label class="text-xs md:text-sm text-gray-700 mb-1 ml-2">Guest</label>
+              <div class="relative">
+                <input type="number" min="1" placeholder="Add Guest"
+                  class="w-full p-2 pr-12 border-none rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-600" />
+                <button type="submit"
+                  class="absolute right-1 top-1/2 -translate-y-1/2 bg-purple-600 hover:bg-purple-700 p-2 md:p-3 rounded-full transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+  <div class="container mx-auto max-w-6xl pt-12">
+    <h2 class="sub-title font-bold text-2xl mb-6 flex items-center gap-2 border-b pb-2">
+      <span>Popular In </span>
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600">
+          <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0" />
+          <circle cx="12" cy="8" r="2" />
+          <path
+            d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
+        </svg>
+        <span class="text-gray-600 font-semibold hover:text-gray-800 transition-colors">Your
+          Country</span>
+      </div>
+    </h2>
+    <div class="trending grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    </div>
+  </div>
+
+  <script>
+    async function getUserCountry() {
+      try {
+        // const response = await fetch('https://ipapi.co/json/');
+        // const data = await response.json();
+        // return data.country_name;
+        let countryName = "United Kingdom";
+
+        if (countryName.toLowerCase().includes("united")) {
+          countryName = "The " + countryName;
+        }
+        return countryName;
+      } catch (error) {
+        console.error('Error fetching country:', error);
+        return 'Your Country';
+      }
+    }
+
+  </script>
+
+  <div class="container mt-8 mx-auto max-w-7xl px-4">
+    <div class="trending grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="relative group cursor-pointer">
+        <span class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold shadow-md z-10">
+          Guest Favorite
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="absolute top-4 right-4 text-white hover:text-red-500 transition-all duration-300 cursor-pointer z-10">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <img src="./assets/images/dubai.png"
+          class="w-full h-96 object-cover rounded-lg shadow-lg transition-all duration-300 ease-in-out transform group-hover:scale-105 group-hover:shadow-xl" />
+        <div class="mt-3 space-y-1">
+          <h3 class="font-semibold text-lg flex items-center justify-between">Dubai
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                <path
+                  d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+              </svg>
+              <span class="ml-1 text-sm text-gray-600">4.98</span>
+            </div>
+          </h3>
+          <p class="text-sm text-gray-500">Flying with Emirates Airlines</p>
+          <p class="text-sm text-gray-600">7-12 Dec</p>
+          <p class="text-lg"><span class="font-bold underline">$400</span> total</p>
+        </div>
+      </div>
+
+      <div class="relative group cursor-pointer">
+        <span class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold shadow-md z-10">
+          Guest Favorite
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="absolute top-4 right-4 text-white hover:text-red-500 transition-all duration-300 cursor-pointer z-10">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <img src="./assets/images/new-york.png"
+          class="w-full h-96 object-cover rounded-lg shadow-lg transition-all duration-300 ease-in-out transform group-hover:scale-105 group-hover:shadow-xl" />
+        <div class="mt-3 space-y-1">
+          <h3 class="font-semibold text-lg flex items-center justify-between">New York
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                <path
+                  d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+              </svg>
+              <span class="ml-1 text-sm text-gray-600">4.99</span>
+            </div>
+          </h3>
+          <p class="text-sm text-gray-500">Flying with United Airlines</p>
+          <p class="text-sm text-gray-600">10-17 Feb</p>
+          <p class="text-lg"><span class="font-bold underline">$600</span> total</p>
+        </div>
+      </div>
+
+      <div class="relative group cursor-pointer">
+        <span class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold shadow-md z-10">
+          Guest Favorite
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="absolute top-4 right-4 text-white hover:text-red-500 transition-all duration-300 cursor-pointer z-10">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <img src="./assets/images/paris.png"
+          class="w-full h-96 object-cover rounded-lg shadow-lg transition-all duration-300 ease-in-out transform group-hover:scale-105 group-hover:shadow-xl" />
+        <div class="mt-3 space-y-1">
+          <h3 class="font-semibold text-lg flex items-center justify-between">Paris
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                <path
+                  d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+              </svg>
+              <span class="ml-1 text-sm text-gray-600">5.0</span>
+            </div>
+          </h3>
+          <p class="text-sm text-gray-500">Flying with Air France</p>
+          <p class="text-sm text-gray-600">15-22 Mar</p>
+          <p class="text-lg"><span class="font-bold underline">$550</span> total</p>
+        </div>
+      </div>
+
+      <div class="relative group cursor-pointer">
+        <span class="absolute top-4 left-4 bg-white px-3 py-1 rounded-full text-sm font-semibold shadow-md z-10">
+          Guest Favorite
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="absolute top-4 right-4 text-white hover:text-red-500 transition-all duration-300 cursor-pointer z-10">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+        <img src="./assets/images/tokyo.jpeg"
+          class="w-full h-96 object-cover rounded-lg shadow-lg transition-all duration-300 ease-in-out transform group-hover:scale-105 group-hover:shadow-xl" />
+        <div class="mt-3 space-y-1">
+          <h3 class="font-semibold text-lg flex items-center justify-between">Tokyo
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                <path
+                  d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+              </svg>
+              <span class="ml-1 text-sm text-gray-600">4.96</span>
+            </div>
+          </h3>
+          <p class="text-sm text-gray-500">Flying with Japan Airlines</p>
+          <p class="text-sm text-gray-600">20-27 Apr</p>
+          <p class="text-lg"><span class="font-bold underline">$800</span> total</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    async function getUserLocation() {
+      try {
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        return {
+          country: data.country_name,
+          currency: data.currency
+        };
+      } catch (error) {
+        console.error('Error fetching location:', error);
+        return { country: 'UK', currency: 'GBP' };
+      }
+    }
+
+    function formatPrice(price, currency) {
+      return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: currency
+      }).format(price);
+    }
+
+    async function updateCardInfo() {
+      const { currency } = await getUserLocation();
+      const prices = {
+        dubai: 875,
+        newyork: 560,
+        paris: 750,
+        tokyo: 800
+      };
+
+      Object.entries(prices).forEach(([city, price]) => {
+        const priceElement = document.getElementById(`price-${city}`);
+        if (priceElement) {
+          priceElement.textContent = formatPrice(price, currency);
+        }
+      });
+
+      document.querySelectorAll('.group svg').forEach(heart => {
+        heart.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          this.classList.toggle('text-red-500');
+          this.classList.toggle('fill-current');
+        });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', updateCardInfo);
+  </script>
+  </div>
+  <div class="container mx-auto px-4 py-8 max-w-7xl">
+    <h2 class="text-3xl text-gray-800">Exclusives</h2>
+    <p class="mb-8 text-gray-500">Handpicked destinations with special deals just for you • <span
+        class="text-purple-600 hover:text-purple-700 cursor-pointer">See all exclusives →</span></p>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-1.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="London" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">London</h3>
+          <p class="text-white/90 text-sm">Starts @ $250</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-2.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Paris" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Paris</h3>
+          <p class="text-white/90 text-sm">Starts @ $350</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-3.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Japan" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Japan</h3>
+          <p class="text-white/90 text-sm">Starts @ $550</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-4.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Kashmir" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Kashmir</h3>
+          <p class="text-white/90 text-sm">Starts @ $500</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-5.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Paradis Island" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Paradis Island</h3>
+          <p class="text-white/90 text-sm">Starts @ $120</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-6.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Marley" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Marley</h3>
+          <p class="text-white/90 text-sm">Starts @ $800</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-7.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Birmingham" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Birmingham</h3>
+          <p class="text-white/90 text-sm">Starts @ $2800</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-8.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Rajasthan" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Rajasthan</h3>
+          <p class="text-white/90 text-sm">Starts @ $600</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-9.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Kerala" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Kerala</h3>
+          <p class="text-white/90 text-sm">Starts @ $750</p>
+        </div>
+      </div>
+
+      <div
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
+        <img src="./assets/images/image-10.png"
+          class="w-full h-64 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-75"
+          alt="Ukraine" />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent transform translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+          <h3 class="text-white text-xl font-semibold">Ukraine</h3>
+          <p class="text-white/90 text-sm">Starts @ $5000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container mx-auto px-4 py-16 max-w-7xl">
+    <h2 class="text-3xl font-bold text-gray-800">Stay near City of London's top sights</h2>
+    <p class="mb-8 text-gray-500">Discover iconic landmarks and hidden gems recommended by locals • <span
+        class="text-purple-600 hover:text-purple-700 cursor-pointer">See all locations →</span></p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 rounded-t-xl bg-gray-200 overflow-hidden">
+          <img src="./assets/images/london-bridge.jpg" alt="London Bridge" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">London Bridge</h3>
+          <p class="text-purple-600 font-medium">482 locals recommend</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 rounded-t-xl bg-gray-200 overflow-hidden">
+          <img src="./assets/images/tower-bridge.jpg" alt="Tower Bridge" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Tower Bridge</h3>
+          <p class="text-purple-600 font-medium">1,577 locals recommend</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 rounded-t-xl bg-gray-200 overflow-hidden">
+          <img src="./assets/images/london-eye.jpg" alt="London Eye" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">London Eye</h3>
+          <p class="text-purple-600 font-medium">2,099 locals recommend</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 rounded-t-xl bg-gray-200 overflow-hidden">
+          <img src="./assets/images/big-ben.jpg" alt="Big Ben" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Big Ben</h3>
+          <p class="text-purple-600 font-medium">1,337 locals recommend</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 rounded-t-xl bg-gray-200 overflow-hidden">
+          <img src="./assets/images/liverpool-street.jpg" alt="Liverpool Street Station"
+            class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Liverpool Street Station</h3>
+          <p class="text-purple-600 font-medium">247 locals recommend</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 rounded-t-xl bg-gray-200 overflow-hidden">
+          <img src="./assets/images/burrito-cafe.jpg" alt="Burrito Cafe - Kings Cross"
+            class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Burrito Cafe - Kings Cross</h3>
+          <p class="text-purple-600 font-medium">14 locals recommend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 py-16 max-w-7xl">
+    <h2 class="text-3xl text-gray-800">Prefer any of these?</h2>
+    <p class="mb-8 text-gray-500">Choose from our curated selection of premium services • <span
+        class="text-purple-600 hover:text-purple-700 cursor-pointer">See all services →</span></p>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div
+        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+        <div class="p-3 bg-purple-100 rounded-full mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-purple-600">
+            <rect width="20" height="14" x="2" y="5" rx="2" />
+            <line x1="2" x2="22" y1="10" y2="10" />
+          </svg>
+        </div>
+        <h3 class="text-gray-800 font-semibold">Exclusive Perks and Amenities</h3>
+      </div>
+
+      <div
+        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+        <div class="p-3 bg-purple-100 rounded-full mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-purple-600">
+            <path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8" />
+            <path d="M7 14h.01" />
+            <path d="M17 14h.01" />
+            <rect width="18" height="8" x="3" y="10" rx="2" />
+            <path d="M5 18v2" />
+            <path d="M19 18v2" />
+          </svg>
+        </div>
+        <h3 class="text-gray-800 font-semibold">Personalized Services</h3>
+      </div>
+
+      <div
+        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+        <div class="p-3 bg-purple-100 rounded-full mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-purple-600">
+            <path d="M8 22h8" />
+            <path d="M12 11v11" />
+            <path d="m19 3-7 8-7-8Z" />
+          </svg>
+        </div>
+        <h3 class="text-gray-800 font-semibold">VIP Treatments</h3>
+      </div>
+
+      <div
+        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+        <div class="p-3 bg-purple-100 rounded-full mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-purple-600">
+            <path d="M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2" />
+            <path d="M17 14V4a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v10" />
+            <rect width="13" height="8" x="8" y="6" rx="1" />
+            <circle cx="18" cy="20" r="2" />
+            <circle cx="9" cy="20" r="2" />
+          </svg>
+        </div>
+        <h3 class="text-gray-800 font-semibold">Travel Logistics</h3>
+      </div>
+
+      <div
+        class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+        <div class="p-3 bg-purple-100 rounded-full mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-purple-600">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 12h8" />
+            <path d="M12 8v8" />
+          </svg>
+        </div>
+        <h3 class="text-gray-800 font-semibold">Additional Benefits</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container mx-auto px-4 py-16 max-w-7xl">
+    <h2 class="text-3xl text-gray-800">Travellers Stories</h2>
+    <p class=" mb-8 text-gray-500">Read inspiring stories from fellow travelers around the world • <span
+        class="text-purple-600 hover:text-purple-700 cursor-pointer">See all stories →</span></p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="group bg-white rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+        <div class="overflow-hidden">
+          <img src="./assets/images/story-1.png"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            alt="European countries story" />
+        </div>
+        <div class="p-6">
+          <p class="text-gray-800 font-medium text-lg leading-relaxed">
+            Popular European countries with a budget of just $10,000
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="group bg-white rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+        <div class="overflow-hidden">
+          <img src="./assets/images/story-2.png"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            alt="100 countries story" />
+        </div>
+        <div class="p-6">
+          <p class="text-gray-800 font-medium text-lg leading-relaxed">
+            Travelled more than 100 countries in less than a year
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="group bg-white rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
+        <div class="overflow-hidden">
+          <img src="./assets/images/story-3.png"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+            alt="Thailand story" />
+        </div>
+        <div class="p-6">
+          <p class="text-gray-800 font-medium text-lg leading-relaxed">
+            Best experience you get while travelling to Thailand
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-gray-100 px-8 py-12 mt-16">
+    <div class="container mx-auto max-w-full">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h3 class="font-semibold mb-4">Support</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-600 hover:underline">Help Centre</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">AirCover</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Anti-discrimination</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Disability support</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Cancellation options</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Report neighbourhood concern</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-4">Hosting</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-600 hover:underline">Travel City your home</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">AirCover for Hosts</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Hosting resources</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Community forum</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Hosting responsibly</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-4">Travel City</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-600 hover:underline">Newsroom</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">New features</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Careers</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Investors</a></li>
+            <li><a href="#" class="text-gray-600 hover:underline">Gift cards</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-gray-200">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div class="flex items-center space-x-4">
+            <span class="text-gray-600">©
+              <script>document.write(new Date().getFullYear());</script> Travel City, Inc.
+            </span>
+            <span class="text-gray-300">·</span>
+            <a href="#" class="text-gray-600 hover:underline">Privacy</a>
+            <span class="text-gray-300">·</span>
+            <a href="#" class="text-gray-600 hover:underline">Terms</a>
+          </div>
+
+          <div class="flex items-center space-x-6">
+            <a href="#" class="text-gray-600 hover:text-gray-900">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-900">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
