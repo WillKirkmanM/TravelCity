@@ -4,7 +4,7 @@
 <h1 align="center">Travel City</h1>
 
 ## 🌐 Live Demo
-[Travel City Website](https://willkirkmanm.github.io/travelcity/)
+<a href="https://willkirkmanm.github.io/TravelCity/" target="_blank" rel="noopener noreferrer">Travel City Website</a>
 
 ## What are we?
 Travel City is a modern web application designed to simplify travel planning and accommodation booking. Our platform provides an interface for travelers to search, compare, and book accommodations worldwide while offering personalized location-based recommendations.
