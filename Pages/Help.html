@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/help.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src = "../assets/js/help.js"></script>
 </head>
 <body>
 
@@ -19,20 +20,48 @@
           <div class="hidden md:flex items-center space-x-6">
             
             <a href="#" class="text-sm text-white hover:text-purple-400 transition-colors">Travel City near you</a>
-            <button class="text-white hover:text-purple-400 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-globe">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-                <path d="M2 12h20" />
-              </svg>
-            </button>
+            <div id="shifted">
+              <button class="text-white hover:text-purple-400 transition-colors" id="LanguageModal">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                   class="lucide lucide-globe">
+                   <circle cx="12" cy="12" r="10" />
+                   <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                   <path d="M2 12h20" />
+                 </svg>
+               </button>
+               <div id="myModal" class="modal">
+   
+                 <!-- Modal content -->
+                 <div class="modal-content">
+                   <span class="close">&times;</span>
+                   <p>You can translate the content of this page by selecting a language in the select box.</p>
+                   <div id="google_translate_element"></div>               
+                   <script type="text/javascript">
+                       function googleTranslateElementInit() {
+                           new google.translate.TranslateElement(
+                               {
+                                   pageLanguage: 'en',
+ 
+                               }, 
+                               'google_translate_element'
+                           );
+                       }
+                   </script>
+               
+                   <script type="text/javascript" 
+                       src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                   </script>
+                 </div>
+               
+               </div>
+             </div>
             <button class="flex items-center">
               <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile"
                 class="w-8 h-8 md:w-10 md:h-10 rounded-full" />
             </button>
           </div>
+          
           <button class="md:hidden text-white p-2" onclick="toggleMobileMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

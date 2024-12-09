@@ -1,3 +1,3 @@
- https://www.w3schools.com/howto/howto_css_modals.asp for 
- For new languages button
+https://www.w3schools.com/howto/howto_css_modals.asp for 
+For new languages button
 Hero image with the text displayed over it for help page
