@@ -11,38 +11,68 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/js/index.js"></script>
   
 </head>
 
-<body class="min-h-screen">
-  <div class="absolute top-0 left-0 w-full h-full overflow-hidden transition-opacity duration-100" id="videoContainer">
+<body>
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden transition-opacity duration-100 max-h-screen" id="videoContainer">
     <div class="absolute inset-0 bg-black/30"></div>
     <video class="w-full h-full object-cover blur" autoplay muted loop playsinline>
       <source src="./assets/videos/travel.mp4" type="video/mp4">
     </video>
   </div>
-
-  <div class="relative min-h-screen">
-    <nav class="flex items-center justify-between px-4 py-2 fixed w-full top-0 left-0 z-50">
-      <a href="">
-        <img src="./assets/images/logo.png" class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
+  <nav class="navbar-black flex items-center justify-between px-4 py-2 w-full left-0 z-50" id="navbar"
+    >
+      <a href="../index.html">
+        <img src="../assets/images/logo.png" class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
       </a>
+
       <div class="hidden md:flex items-center space-x-6">
+        
         <a href="#" class="text-sm text-white hover:text-purple-400 transition-colors">Travel City near you</a>
-        <button class="text-white hover:text-purple-400 transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-globe">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-            <path d="M2 12h20" />
-          </svg>
-        </button>
+        <div id="shifted">
+          <button class="text-white hover:text-purple-400 transition-colors" id="LanguageModal">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               class="lucide lucide-globe">
+               <circle cx="12" cy="12" r="10" />
+               <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+               <path d="M2 12h20" />
+             </svg>
+           </button>
+           <div id="myModal" class="modal">
+
+             <!-- Modal content -->
+             <div class="modal-content">
+               <span class="close">&times;</span>
+               <p>You can translate the content of this page by selecting a language in the select box.</p>
+               <div id="google_translate_element"></div>               
+               <script type="text/javascript">
+                   function googleTranslateElementInit() {
+                       new google.translate.TranslateElement(
+                           {
+                               pageLanguage: 'en',
+
+                           }, 
+                           'google_translate_element'
+                       );
+                   }
+               </script>
+           
+               <script type="text/javascript" 
+                   src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+               </script>
+             </div>
+           
+           </div>
+         </div>
         <button class="flex items-center">
           <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile"
             class="w-8 h-8 md:w-10 md:h-10 rounded-full" />
         </button>
       </div>
+      
       <button class="md:hidden text-white p-2" onclick="toggleMobileMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -51,8 +81,9 @@
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
+      
     </nav>
-
+  <div>   
     <div class="hidden md:hidden bg-white absolute top-full left-0 right-0 shadow-lg p-4" id="mobileMenu">
       <a href="#" class="block py-2 text-sm">Travel City near you</a>
       <hr class="my-2">
@@ -119,7 +150,7 @@
           }
         });
       </script>
-</body>
+
 
 <!-- Bouncing Arrow -->
 <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
