@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosting Responsibilities - Travel City</title>
+    <link rel="icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://images.unsplash.com/photo-1621293954908-907159247fc8" alt="Hosting Responsibilities" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Host Responsibly</h1>
+                <p class="text-xl text-white mt-4">Creating safe and welcoming spaces for guests</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Responsibilities Grid -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <i class="fas fa-shield-alt text-purple-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-4">Safety First</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>Emergency contact info</li>
+                    <li>Fire safety equipment</li>
+                    <li>Security measures</li>
+                    <li>First aid supplies</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <i class="fas fa-broom text-purple-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-4">Cleanliness</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>Professional cleaning</li>
+                    <li>Sanitization protocols</li>
+                    <li>Fresh linens</li>
+                    <li>Regular maintenance</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <i class="fas fa-comments text-purple-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-4">Communication</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>Prompt responses</li>
+                    <li>Clear instructions</li>
+                    <li>House rules</li>
+                    <li>Local guidance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Checklist -->
+    <section class="bg-purple-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Compliance Checklist</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                        <label class="ml-3 text-gray-700">Valid permits and licenses</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                        <label class="ml-3 text-gray-700">Insurance coverage</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                        <label class="ml-3 text-gray-700">Safety equipment installed</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" class="w-5 h-5 text-purple-600 rounded">
+                        <label class="ml-3 text-gray-700">Guest information prepared</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Impact -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8">Community Impact</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="font-bold text-xl mb-4">Neighborhood Guidelines</h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li>Respect quiet hours</li>
+                    <li>Proper waste management</li>
+                    <li>Parking regulations</li>
+                    <li>Local business support</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="font-bold text-xl mb-4">Environmental Practices</h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li>Energy conservation</li>
+                    <li>Recycling program</li>
+                    <li>Eco-friendly products</li>
+                    <li>Water conservation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Resources -->
+    <section class="bg-red-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Emergency Resources</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-4">Emergency Contacts</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-red-600 mr-3"></i>
+                            <span>Emergency: 911</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-headset text-red-600 mr-3"></i>
+                            <span>24/7 Host Support: 1-800-HOST-HELP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl mb-4">Quick Actions</h3>
+                    <div class="space-y-4">
+                        <button class="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700">Report Emergency</button>
+                        <button class="w-full bg-gray-600 text-white py-2 rounded-lg hover:bg-gray-700">Contact Support</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+</body>
+</html>
