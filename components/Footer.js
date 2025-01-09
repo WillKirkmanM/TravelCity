@@ -7,34 +7,34 @@ class FooterComponent extends HTMLElement {
             <div>
               <h3 class="font-semibold mb-4">Support</h3>
               <ul class="space-y-3">
-                <li><a href="/help.html" class="text-gray-600 hover:underline">Help Centre</a></li>
-                <li><a href="/TravelCover.html" class="text-gray-600 hover:underline">TravelCover Insurance</a></li>
-                <li><a href="/Anti-Discrimination.html" class="text-gray-600 hover:underline">Anti-discrimination</a></li>
-                <li><a href="/Disability-Support.html" class="text-gray-600 hover:underline">Disability support</a></li>
-                <li><a href="/Cancellation-Options.html" class="text-gray-600 hover:underline">Cancellation options</a></li>
-                <li><a href="/Neighbourhood-Concerns.html" class="text-gray-600 hover:underline">Report neighbourhood concern</a></li>
+                <li><a href="./help.html" class="text-gray-600 hover:underline">Help Centre</a></li>
+                <li><a href="./TravelCover.html" class="text-gray-600 hover:underline">TravelCover Insurance</a></li>
+                <li><a href="./Anti-Discrimination.html" class="text-gray-600 hover:underline">Anti-discrimination</a></li>
+                <li><a href="./Disability-Support.html" class="text-gray-600 hover:underline">Disability support</a></li>
+                <li><a href="./Cancellation-Options.html" class="text-gray-600 hover:underline">Cancellation options</a></li>
+                <li><a href="./Neighbourhood-Concerns.html" class="text-gray-600 hover:underline">Report neighbourhood concern</a></li>
               </ul>
             </div>
 
             <div>
               <h3 class="font-semibold mb-4">Hosting</h3>
               <ul class="space-y-3">
-                <li><a href="/TravelCityYourHome.html" class="text-gray-600 hover:underline">Travel City your home</a></li>
-                <li><a href="/TravelCoverForHosts.html" class="text-gray-600 hover:underline">TravelCover for Hosts</a></li>
-                <li><a href="/HostingResources.html" class="text-gray-600 hover:underline">Hosting resources</a></li>
-                <li><a href="/CommunityForum.html" class="text-gray-600 hover:underline">Community forum</a></li>
-                <li><a href="/HostingResponsibility.html" class="text-gray-600 hover:underline">Hosting responsibly</a></li>
+                <li><a href="./TravelCityYourHome.html" class="text-gray-600 hover:underline">Travel City your home</a></li>
+                <li><a href="./TravelCoverForHosts.html" class="text-gray-600 hover:underline">TravelCover for Hosts</a></li>
+                <li><a href="./HostingResources.html" class="text-gray-600 hover:underline">Hosting resources</a></li>
+                <li><a href="./CommunityForum.html" class="text-gray-600 hover:underline">Community forum</a></li>
+                <li><a href="./HostingResponsibility.html" class="text-gray-600 hover:underline">Hosting responsibly</a></li>
               </ul>
             </div>
 
             <div>
               <h3 class="font-semibold mb-4">Travel City</h3>
               <ul class="space-y-3">
-                <li><a href="/Newsroom.html" class="text-gray-600 hover:underline">Newsroom</a></li>
-                <li><a href="/NewFeatures.html" class="text-gray-600 hover:underline">New features</a></li>
-                <li><a href="/Careers.html" class="text-gray-600 hover:underline">Careers</a></li>
-                <li><a href="/Investors.html" class="text-gray-600 hover:underline">Investors</a></li>
-                <li><a href="/GiftCards.html" class="text-gray-600 hover:underline">Gift cards</a></li>
+                <li><a href="./Newsroom.html" class="text-gray-600 hover:underline">Newsroom</a></li>
+                <li><a href="./NewFeatures.html" class="text-gray-600 hover:underline">New features</a></li>
+                <li><a href="./Careers.html" class="text-gray-600 hover:underline">Careers</a></li>
+                <li><a href="./Investors.html" class="text-gray-600 hover:underline">Investors</a></li>
+                <li><a href="./GiftCards.html" class="text-gray-600 hover:underline">Gift cards</a></li>
               </ul>
             </div>
           </div>
@@ -46,9 +46,9 @@ class FooterComponent extends HTMLElement {
                   <script>document.write(new Date().getFullYear());</script> Travel City, Inc.
                 </span>
                 <span class="text-gray-300">·</span>
-                <a href="/Privacy.html" class="text-gray-600 hover:underline">Privacy</a>
+                <a href="./Privacy.html" class="text-gray-600 hover:underline">Privacy</a>
                 <span class="text-gray-300">·</span>
-                <a href="/Terms.html" class="text-gray-600 hover:underline">Terms</a>
+                <a href="./Terms.html" class="text-gray-600 hover:underline">Terms</a>
               </div>
 
               <div class="flex items-center space-x-6">
