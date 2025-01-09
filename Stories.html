@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Stories | Travel City</title>
+    <link rel="icon" href="./assets/images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="bg-purple-600 text-white py-16">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold">Travel Stories</h1>
+        <p class="text-xl mt-4">Real experiences from real travelers</p>
+      </div>
+    </div>
+
+    <!-- Featured Story -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+        <div class="md:flex">
+          <div class="md:w-1/2">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/640px-London_Skyline_%28125508655%29.jpeg"
+              class="w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
+              alt="London Story"
+              loading="lazy"
+            />
+          </div>
+          <div class="md:w-1/2 p-8">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Featured</span
+            >
+            <h2 class="text-3xl font-bold mt-4">
+              A Week in London: Hidden Gems
+            </h2>
+            <p class="text-gray-600 mt-4">
+              Discover the secret spots and local favorites that make London
+              truly special. From hidden cafes to secret gardens...
+            </p>
+            <div class="flex items-center mt-6">
+              <img
+                src="https://i.pravatar.cc/150?img=1"
+                class="w-10 h-10 rounded-full"
+                alt="Sarah Johnson"
+                loading="lazy"
+              />
+              <div class="ml-4">
+                <p class="font-semibold">Sarah Johnson</p>
+                <p class="text-gray-500 text-sm">5 min read • March 15, 2024</p>
+              </div>
+            </div>
+            <button
+              class="mt-6 bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap gap-2">
+        <button class="px-4 py-2 rounded-full bg-purple-600 text-white">
+          All
+        </button>
+        <button
+          class="px-4 py-2 rounded-full bg-gray-200 hover:bg-purple-600 hover:text-white"
+        >
+          Adventure
+        </button>
+        <button
+          class="px-4 py-2 rounded-full bg-gray-200 hover:bg-purple-600 hover:text-white"
+        >
+          Culture
+        </button>
+        <button
+          class="px-4 py-2 rounded-full bg-gray-200 hover:bg-purple-600 hover:text-white"
+        >
+          Food
+        </button>
+        <button
+          class="px-4 py-2 rounded-full bg-gray-200 hover:bg-purple-600 hover:text-white"
+        >
+          Tips
+        </button>
+      </div>
+    </div>
+
+    <!-- Stories Grid -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Story Card -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://img.static-af.com/images/media/45CB9A13-B167-4842-8EA805D0CC7A4D04/"
+            class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+            alt="Paris Story"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Culture</span
+            >
+            <h3 class="font-bold text-xl mt-4">
+              Paris: Beyond the Eiffel Tower
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Exploring the authentic Parisian neighborhoods and local
+              culture...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=2"
+                class="w-8 h-8 rounded-full"
+                alt="Marie Dubois"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Marie Dubois</p>
+                <p class="text-gray-500 text-xs">3 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Story Cards -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://digital.ihg.com/is/image/ihg/voco-dubai-8588673108-16x9"
+            class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+            alt="Dubai Story"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Adventure</span
+            >
+            <h3 class="font-bold text-xl mt-4">Desert Safari Adventures</h3>
+            <p class="text-gray-600 mt-2">
+              Thrilling experiences in the Dubai desert with local guides...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=3"
+                class="w-8 h-8 rounded-full"
+                alt="Ahmed Hassan"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Ahmed Hassan</p>
+                <p class="text-gray-500 text-xs">4 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tokyo Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://images.goway.com/production/featured_images/japan_tokyo_akihabara_AdobeStock_295310062_Editorial_Use_Only.jpg"
+            class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+            alt="Tokyo Story"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Culture</span
+            >
+            <h3 class="font-bold text-xl mt-4">
+              Tokyo: Modern Meets Traditional
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Navigating the fascinating contrasts of Japan's bustling
+              capital...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=4"
+                class="w-8 h-8 rounded-full"
+                alt="Yuki Tanaka"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Yuki Tanaka</p>
+                <p class="text-gray-500 text-xs">6 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rome Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://assets.cityexperiences.com/wp-content/uploads/2022/02/Civitavecchia_Rome_Italy_4899_Trevi_Fountain-1024x737.jpg"
+            class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+            alt="Rome Story"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Food</span
+            >
+            <h3 class="font-bold text-xl mt-4">Roman Culinary Journey</h3>
+            <p class="text-gray-600 mt-2">
+              Discovering authentic Italian cuisine in the heart of Rome...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=5"
+                class="w-8 h-8 rounded-full"
+                alt="Marco Rossi"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Marco Rossi</p>
+                <p class="text-gray-500 text-xs">5 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New York Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://images.ctfassets.net/1aemqu6a6t65/46MJ6ER585Rwl3NraEIoGL/784c5eb5d87f576b5548b1a2255f08e7/tripadvisortimessquare_taggeryanceyiv_5912"
+            class="w-full h-48 object-cover"
+            alt="New York Story"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Tips</span
+            >
+            <h3 class="font-bold text-xl mt-4">NYC on a Budget</h3>
+            <p class="text-gray-600 mt-2">
+              Smart tips for exploring the Big Apple without breaking the
+              bank...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=6"
+                class="w-8 h-8 rounded-full"
+                alt="Jessica Chen"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Jessica Chen</p>
+                <p class="text-gray-500 text-xs">4 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bali Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://www.travelonline.com/bali/beaches/beach-114814-banner.jpg"
+            class="w-full h-48 object-cover"
+            alt="Bali Story"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Adventure</span
+            >
+            <h3 class="font-bold text-xl mt-4">Bali's Hidden Waterfalls</h3>
+            <p class="text-gray-600 mt-2">
+              Exploring the secret waterfalls of Indonesia's paradise island...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=7"
+                class="w-8 h-8 rounded-full"
+                alt="Made Wijaya"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Made Wijaya</p>
+                <p class="text-gray-500 text-xs">7 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barcelona Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://www.takewalks.com/blog/wp-content/uploads/2023/06/Walks-20180410-Barcelona-Complete-Gaudi-0001_resize-1024x683.jpg"
+            class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+            alt="Barcelona Story"
+            loading="lazy"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Culture</span
+            >
+            <h3 class="font-bold text-xl mt-4">Gaudi's Barcelona</h3>
+            <p class="text-gray-600 mt-2">
+              A walking tour of the city's most iconic architectural wonders...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=8"
+                class="w-8 h-8 rounded-full"
+                alt="Carlos Ruiz"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Carlos Ruiz</p>
+                <p class="text-gray-500 text-xs">5 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cape Town Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://thecityfix.com/wp-content/uploads/2023/04/Screenshot-2023-04-03-114032.jpg"
+            class="w-full h-48 object-cover"
+            alt="Cape Town Story"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Nature</span
+            >
+            <h3 class="font-bold text-xl mt-4">Wildlife of South Africa</h3>
+            <p class="text-gray-600 mt-2">
+              Safari adventures and encounters with amazing wildlife...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=9"
+                class="w-8 h-8 rounded-full"
+                alt="Thabo Ndlovu"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Thabo Ndlovu</p>
+                <p class="text-gray-500 text-xs">8 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sydney Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sydney_Opera_House_-_Dec_2008.jpg/640px-Sydney_Opera_House_-_Dec_2008.jpg"
+            class="w-full h-48 object-cover"
+            alt="Sydney Story"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Adventure</span
+            >
+            <h3 class="font-bold text-xl mt-4">Surfing Sydney's Waves</h3>
+            <p class="text-gray-600 mt-2">
+              Catching the perfect wave at Australia's famous beaches...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=10"
+                class="w-8 h-8 rounded-full"
+                alt="Emma Wilson"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Emma Wilson</p>
+                <p class="text-gray-500 text-xs">4 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Istanbul Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://img.static-kl.com/images/media/9B7CD988-D791-4B1F-8B5011942FFC8FD1"
+            class="w-full h-48 object-cover"
+            alt="Istanbul Story"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Food</span
+            >
+            <h3 class="font-bold text-xl mt-4">Spices of Istanbul</h3>
+            <p class="text-gray-600 mt-2">
+              A journey through Turkey's vibrant food markets and cuisine...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=11"
+                class="w-8 h-8 rounded-full"
+                alt="Ayşe Yılmaz"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Ayşe Yılmaz</p>
+                <p class="text-gray-500 text-xs">6 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kyoto Story -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://boutiquejapan.com/wp-content/uploads/2019/07/yasaka-pagoda-higashiyama-kyoto-japan.jpg"
+            class="w-full h-48 object-cover"
+            alt="Kyoto Story"
+          />
+          <div class="p-6">
+            <span
+              class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm"
+              >Culture</span
+            >
+            <h3 class="font-bold text-xl mt-4">Temples of Kyoto</h3>
+            <p class="text-gray-600 mt-2">
+              Finding peace in Japan's ancient temple gardens...
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="https://i.pravatar.cc/150?img=12"
+                class="w-8 h-8 rounded-full"
+                alt="Kenji Sato"
+                loading="lazy"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-semibold">Kenji Sato</p>
+                <p class="text-gray-500 text-xs">5 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer-component></footer-component>
+  </body>
+</html>
