@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anti Discrimination - Travel City</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./components/Navbar.js"></script>
+  <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://images.indianexpress.com/2024/08/Here-are-the-top-10-popular-global-leaders-in-2024-July-1.jpg" alt="World Leaders Coming Together from The Indian Express" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Fighting Discrimination</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Article Metadata -->
+            <div class="flex items-center space-x-4 mb-8 text-gray-600">
+                <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Dr. Maria Rodriguez" class="w-12 h-12 rounded-full">
+                <div>
+                    <div class="font-semibold">Dr. Maria Rodriguez</div>
+                    <div class="text-sm">
+                        <span>March 16, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>8 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Body -->
+            <article class="prose prose-lg max-w-none">
+                <h2 class="text-3xl font-bold mb-6">Our Commitment to Fighting Discrimination</h2>
+                <p class="text-gray-600 mb-8">At TravelCity, we believe that travel should be accessible to everyone. We are committed to creating an inclusive platform where all travelers feel welcome, regardless of their race, color, ethnicity, national origin, religion, sexual orientation, gender identity, age, or disability.</p>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-purple-800">Zero Tolerance Policy</h3>
+                        <p class="text-gray-700">We immediately investigate all reports of discrimination and take appropriate action, including permanent removal from our platform.</p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-purple-800">24/7 Support</h3>
+                        <p class="text-gray-700">Our dedicated support team is available around the clock to assist with any discrimination-related concerns.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-6">How We Combat Discrimination</h3>
+                <div class="space-y-6 mb-12">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-shield-alt text-purple-600 text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold mb-2">Proactive Prevention</h4>
+                            <p class="text-gray-600">We use advanced systems to detect and prevent discriminatory behavior before it occurs.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-gavel text-purple-600 text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold mb-2">Swift Action</h4>
+                            <p class="text-gray-600">Immediate investigation of all reported incidents with transparent communication.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-users text-purple-600 text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold mb-2">Community Education</h4>
+                            <p class="text-gray-600">Regular training and resources for our community members on inclusive practices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg mb-12">
+                    <h3 class="text-2xl font-bold mb-6">Report Discrimination</h3>
+                    <p class="text-gray-600 mb-6">If you experience or witness discrimination:</p>
+                    <ol class="list-decimal list-inside space-y-4 text-gray-600 mb-6">
+                        <li>Use the "Report" button on any listing or profile</li>
+                        <li>Contact our 24/7 support team</li>
+                        <li>Document the incident with screenshots or messages</li>
+                    </ol>
+                    <a href="./help.html">
+                        <button class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">Contact Support</button>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Social Share -->
+            <div class="border-t border-b border-gray-200 py-8 my-8">
+                <h3 class="text-lg font-semibold mb-4">Share this article</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <a href="#" class="group">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                    <div class="h-48">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6" alt="Diversity in Travel" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600">Celebrating Diversity in Travel</h3>
+                        <p class="text-gray-600">How diverse perspectives enrich the travel experience...</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="group">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                    <div class="h-48">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Inclusive Tourism" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600">Making Tourism More Inclusive</h3>
+                        <p class="text-gray-600">Steps towards creating accessible travel experiences...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Comments Section -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <h2 class="text-2xl font-bold mb-8">Comments</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form class="mb-8">
+                    <textarea class="w-full p-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent" rows="4" placeholder="Leave a comment..."></textarea>
+                    <button class="mt-4 px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">Post Comment</button>
+                </form>
+                <div class="space-y-6">
+                    <!-- Comment Template -->
+                    <div class="border-b border-gray-200 pb-6 last:border-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/85.jpg" alt="Emily Chen" class="w-10 h-10 rounded-full">
+                            <div>
+                                <div class="font-semibold">Emily Chen</div>
+                                <div class="text-sm text-gray-600">March 15, 2024</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">Appreciate TravelCity's strong stance against discrimination. The reporting process is straightforward and effective.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+</body>
+</html>

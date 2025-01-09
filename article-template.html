@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Page - Travel City</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./components/Navbar.js"></script>
+  <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="[ARTICLE-COVER-IMAGE]" alt="[ARTICLE-TITLE]" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">[ARTICLE-TITLE]</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Article Metadata -->
+            <div class="flex items-center space-x-4 mb-8 text-gray-600">
+                <img src="[AUTHOR-IMAGE]" alt="[AUTHOR-NAME]" class="w-12 h-12 rounded-full">
+                <div>
+                    <div class="font-semibold">[AUTHOR-NAME]</div>
+                    <div class="text-sm">
+                        <span>[PUBLISH-DATE]</span>
+                        <span class="mx-2">•</span>
+                        <span>[READ-TIME] min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Body -->
+            <article class="prose prose-lg max-w-none">
+                [ARTICLE-CONTENT]
+            </article>
+
+            <!-- Social Share -->
+            <div class="border-t border-b border-gray-200 py-8 my-8">
+                <h3 class="text-lg font-semibold mb-4">Share this article</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <h2 class="text-2xl font-bold mb-8">Related Articles</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="#" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="[RELATED-ARTICLE-IMAGE]" alt="[RELATED-ARTICLE-TITLE]" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600 transition-colors">[RELATED-ARTICLE-TITLE]</h3>
+                            <p class="text-gray-600">[RELATED-ARTICLE-EXCERPT]</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Repeat for second related article -->
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <h2 class="text-2xl font-bold mb-8">Comments</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form class="mb-8">
+                    <textarea class="w-full p-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent" rows="4" placeholder="Leave a comment..."></textarea>
+                    <button class="mt-4 px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">Post Comment</button>
+                </form>
+                <div class="space-y-6">
+                    <!-- Comment Template -->
+                    <div class="border-b border-gray-200 pb-6 last:border-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="[COMMENTER-IMAGE]" alt="[COMMENTER-NAME]" class="w-10 h-10 rounded-full">
+                            <div>
+                                <div class="font-semibold">[COMMENTER-NAME]</div>
+                                <div class="text-sm text-gray-600">[COMMENT-DATE]</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">[COMMENT-CONTENT]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+</body>
+</html>

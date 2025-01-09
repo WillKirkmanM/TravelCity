@@ -46,6 +46,7 @@ Travel City is a modern web application designed to simplify travel planning and
 5. User reviews and ratings
 6. Favorite locations bookmarking
 7. Multi-language support
+
 ##  Setup & Installation
 ```bash
 # Clone repository

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Features - Travel City</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="New Features" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <span class="bg-purple-600 text-white px-4 py-1 rounded-full text-sm mb-4 inline-block">Just Launched</span>
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">AI-Powered Smart Pricing</h1>
+                <p class="text-xl text-white mt-4">Maximize your earnings with dynamic pricing recommendations</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Categories -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm">Live</span>
+                <h3 class="text-xl font-bold mt-4 mb-2">Smart Pricing</h3>
+                <p class="text-gray-600 mb-4">AI-driven pricing recommendations based on market data</p>
+                <a href="#" class="text-purple-600 hover:text-purple-700">Learn more →</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <span class="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-sm">Beta</span>
+                <h3 class="text-xl font-bold mt-4 mb-2">Virtual Tours</h3>
+                <p class="text-gray-600 mb-4">Create immersive 3D tours of your property</p>
+                <a href="#" class="text-purple-600 hover:text-purple-700">Join beta →</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Coming Soon</span>
+                <h3 class="text-xl font-bold mt-4 mb-2">Auto-Messaging</h3>
+                <p class="text-gray-600 mb-4">Intelligent automated guest communication</p>
+                <a href="#" class="text-purple-600 hover:text-purple-700">Get notified →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Timeline -->
+    <section class="bg-purple-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Feature Roadmap</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-24 text-sm text-gray-600">Q1 2024</div>
+                        <div class="flex-grow bg-white p-6 rounded-lg shadow-md ml-4">
+                            <h3 class="font-bold mb-2">Smart Pricing Launch</h3>
+                            <p class="text-gray-600">AI-powered dynamic pricing system</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-24 text-sm text-gray-600">Q2 2024</div>
+                        <div class="flex-grow bg-white p-6 rounded-lg shadow-md ml-4">
+                            <h3 class="font-bold mb-2">Virtual Tours Beta</h3>
+                            <p class="text-gray-600">3D property visualization technology</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-24 text-sm text-gray-600">Q3 2024</div>
+                        <div class="flex-grow bg-white p-6 rounded-lg shadow-md ml-4">
+                            <h3 class="font-bold mb-2">Auto-Messaging System</h3>
+                            <p class="text-gray-600">Smart guest communication platform</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beta Testing -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Join Beta Testing</h2>
+            <p class="text-gray-600 mb-8">Be the first to try new features and shape the future of TravelCity</p>
+            <form class="space-y-4">
+                <input type="email" placeholder="Your email address" class="w-full p-3 rounded-lg border focus:ring-2 focus:ring-purple-600">
+                <button class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700">Sign Up for Beta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Feature Requests</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Feature Suggestion</label>
+                            <textarea class="w-full p-3 rounded-lg border focus:ring-2 focus:ring-purple-600" rows="4" placeholder="Describe the feature you'd like to see..."></textarea>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your name" class="p-3 rounded-lg border focus:ring-2 focus:ring-purple-600">
+                            <input type="email" placeholder="Your email" class="p-3 rounded-lg border focus:ring-2 focus:ring-purple-600">
+                        </div>
+                        <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+</body>
+</html>

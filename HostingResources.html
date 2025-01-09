@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosting Resources - Travel City</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Hosting Resources" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Host Resources & Tools</h1>
+                <p class="text-xl text-white mt-4">Everything you need for successful hosting</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resource Categories -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-6">
+                <a href="#getting-started" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-rocket text-purple-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Getting Started</h3>
+                    <p class="text-gray-600">Essential guides for new hosts</p>
+                </a>
+                <a href="#marketing" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-bullhorn text-purple-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Marketing Tools</h3>
+                    <p class="text-gray-600">Promote your property</p>
+                </a>
+                <a href="#templates" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-file-alt text-purple-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Templates</h3>
+                    <p class="text-gray-600">Ready-to-use documents</p>
+                </a>
+                <a href="#community" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <i class="fas fa-users text-purple-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Community</h3>
+                    <p class="text-gray-600">Connect with other hosts</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section id="getting-started" class="bg-purple-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Getting Started Guide</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold mr-3">1</span>
+                        <h3 class="font-bold">Set Up Your Listing</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Property photos guide</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Writing descriptions</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Pricing strategies</li>
+                    </ul>
+                    <button class="mt-4 text-purple-600 hover:text-purple-700">Learn more →</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold mr-3">2</span>
+                        <h3 class="font-bold">Prepare Your Space</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cleaning checklist</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Safety requirements</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Amenities guide</li>
+                    </ul>
+                    <button class="mt-4 text-purple-600 hover:text-purple-700">Learn more →</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold mr-3">3</span>
+                        <h3 class="font-bold">Welcome Guests</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>House manual template</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Check-in guide</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Communication tips</li>
+                    </ul>
+                    <button class="mt-4 text-purple-600 hover:text-purple-700">Learn more →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads & Templates -->
+    <section id="templates" class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8">Downloads & Templates</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold mb-2">House Manual Template</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive guide for your guests</p>
+                    </div>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Download</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold mb-2">Cleaning Checklist</h3>
+                        <p class="text-gray-600 mb-4">Professional cleaning standards</p>
+                    </div>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Forum Preview -->
+    <section id="community" class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Host Community</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="space-y-6">
+                    <h3 class="font-bold text-xl mb-4">Recent Discussions</h3>
+                    <div class="border-b pb-4">
+                        <h4 class="font-semibold mb-2">Tips for winter hosting</h4>
+                        <p class="text-gray-600">Share your winter preparation tips...</p>
+                        <div class="mt-2 text-sm text-gray-500">32 replies • 2 hours ago</div>
+                    </div>
+                    <div class="border-b pb-4">
+                        <h4 class="font-semibold mb-2">Smart home devices recommendations</h4>
+                        <p class="text-gray-600">What smart devices do you use?...</p>
+                        <div class="mt-2 text-sm text-gray-500">45 replies • 5 hours ago</div>
+                    </div>
+                </div>
+                <button class="mt-6 bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Join Community</button>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+</body>
+</html>

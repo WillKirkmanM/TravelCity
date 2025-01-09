@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Travel City</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</head>
+<body>
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="bg-purple-600 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold">Our Services</h1>
+            <p class="text-xl mt-4">Everything you need for the perfect travel experience</p>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Flight Booking -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="p-3 bg-purple-100 rounded-full mb-4 w-fit">
+                    <i class="fas fa-plane text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Flight Booking</h3>
+                <p class="text-gray-600 mb-4">Find the best deals on flights worldwide with our extensive network of airlines.</p>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Book Now</button>
+            </div>
+
+            <!-- Hotel Reservations -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="p-3 bg-purple-100 rounded-full mb-4 w-fit">
+                    <i class="fas fa-hotel text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Hotel Reservations</h3>
+                <p class="text-gray-600 mb-4">Book accommodations from luxury hotels to cozy apartments at competitive rates.</p>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Find Hotels</button>
+            </div>
+
+            <!-- Tour Packages -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="p-3 bg-purple-100 rounded-full mb-4 w-fit">
+                    <i class="fas fa-map-marked-alt text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Tour Packages</h3>
+                <p class="text-gray-600 mb-4">Curated travel experiences with expert guides and carefully planned itineraries.</p>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Explore Tours</button>
+            </div>
+
+            <!-- Car Rentals -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="p-3 bg-purple-100 rounded-full mb-4 w-fit">
+                    <i class="fas fa-car text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Car Rentals</h3>
+                <p class="text-gray-600 mb-4">Wide selection of vehicles for your transportation needs at any destination.</p>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Rent Now</button>
+            </div>
+
+            <!-- Travel Insurance -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="p-3 bg-purple-100 rounded-full mb-4 w-fit">
+                    <i class="fas fa-shield-alt text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Travel Insurance</h3>
+                <p class="text-gray-600 mb-4">Comprehensive coverage for worry-free travel experiences worldwide.</p>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Get Protected</button>
+            </div>
+
+            <!-- Custom Itineraries -->
+            <div class="bg-white p-6 rounded-xl shadow-lg">
+                <div class="p-3 bg-purple-100 rounded-full mb-4 w-fit">
+                    <i class="fas fa-route text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Custom Itineraries</h3>
+                <p class="text-gray-600 mb-4">Personalized travel plans tailored to your preferences and schedule.</p>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Plan Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+</body>
+</html>

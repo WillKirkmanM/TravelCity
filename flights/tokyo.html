@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokyo Flights - Travel City</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../components/Navbar.js"></script>
+  <script src="../components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+  <navbar-component></navbar-component>
+
+  <!-- Hero Section -->
+  <div class="relative">
+    <img src="https://www.japan-guide.com/thumb/destination_tokyo.jpg" alt="Tokyo Skyline" class="w-full h-96 object-cover" />
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Flights to Tokyo</h1>
+        <p class="text-xl text-white mt-4">Discover the best flight deals to the vibrant city of Tokyo</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flight Listings -->
+  <div class="container mx-auto px-4 py-12">
+    <div class="grid gap-8">
+      <!-- Flight Card 1 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://e7.pngegg.com/pngimages/615/983/png-clipart-logo-japan-airlines-airplane-boeing-747-airplane-logo-japan-airlines.png" alt="Japan Airlines" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Japan Airlines</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.9 (5,000 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$900</p>
+              <p class="text-sm text-gray-500">One Way</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">7:00 AM</p>
+              <p class="text-sm text-gray-500">San Francisco (SFO)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">11h 30m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">10:30 AM</p>
+              <p class="text-sm text-gray-500">Tokyo (NRT)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 2 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://www.brokercomparador.com/wp-content/uploads/2021/11/delta-air-lines-600.png" alt="Delta Airlines" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Delta Airlines</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.7 (4,200 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$1100</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">12:00 PM</p>
+              <p class="text-sm text-gray-500">Los Angeles (LAX)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">13h 20m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">4:20 PM</p>
+              <p class="text-sm text-gray-500">Tokyo (NRT)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 3 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://w7.pngwing.com/pngs/690/841/png-transparent-lufthansa-logo-lufthansa-cargo-flight-airline-logo-airline-miscellaneous-text-otto-firle.png" alt="Lufthansa" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Lufthansa</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.6 (3,800 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$950</p>
+              <p class="text-sm text-gray-500">One Way</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">9:00 AM</p>
+              <p class="text-sm text-gray-500">Frankfurt (FRA)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">11h 30m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">8:30 PM</p>
+              <p class="text-sm text-gray-500">Tokyo (NRT)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 4 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/849px-Emirates_logo.svg.png" alt="Emirates" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Emirates</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.9 (4,700 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$1300</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">5:00 PM</p>
+              <p class="text-sm text-gray-500">Dubai (DXB)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">9h 50m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">8:50 AM</p>
+              <p class="text-sm text-gray-500">Tokyo (NRT)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 5 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://www.careersinaerospace.com/wp-content/uploads/2020/01/British-Airways-logo-ribbon-logo-219x286.png" alt="British Airways" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">British Airways</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.7 (4,000 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$1150</p>
+              <p class="text-sm text-gray-500">One Way</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">3:45 PM</p>
+              <p class="text-sm text-gray-500">London (LHR)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">12h 45m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">4:30 AM</p>
+              <p class="text-sm text-gray-500">Tokyo (NRT)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 6 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://i.pinimg.com/originals/8d/81/68/8d816801b457e6e5c18213ba3e5f0427.png" alt="KLM Royal Dutch Airlines" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">KLM Royal Dutch Airlines</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.6 (3,100 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$1050</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">6:30 PM</p>
+              <p class="text-sm text-gray-500">Amsterdam (AMS)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">13h 20m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">8:50 AM</p>
+              <p class="text-sm text-gray-500">Tokyo (NRT)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <footer-component></footer-component>
+</body>
+</html>

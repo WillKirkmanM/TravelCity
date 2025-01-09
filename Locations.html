@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations | Travel City</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+    <!-- Add Leaflet CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+</head>
+<body>
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="bg-purple-600 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold">Popular Destinations</h1>
+            <p class="text-xl mt-4">Explore our handpicked collection of amazing locations</p>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-wrap gap-4 items-center justify-between">
+            <div class="relative">
+                <input type="text" placeholder="Search locations..." class="pl-10 pr-4 py-2 border rounded-lg">
+                <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+            </div>
+            <select class="border rounded-lg px-4 py-2">
+                <option>All Regions</option>
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>Americas</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Locations Grid -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- London -->
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="./assets/images/image-1.png" class="w-full h-48 object-cover" alt="London">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">London</h3>
+                    <p class="text-gray-600 mb-4">Experience the rich history and modern culture of England's capital.</p>
+                    <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Explore</button>
+                </div>
+            </div>
+
+            <!-- Paris -->
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="./assets/images/image-2.png" class="w-full h-48 object-cover" alt="Paris">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Paris</h3>
+                    <p class="text-gray-600 mb-4">Discover the city of love and its iconic landmarks.</p>
+                    <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Explore</button>
+                </div>
+            </div>
+
+            <!-- Dubai -->
+            <div class="rounded-lg overflow-hidden shadow-lg">
+                <img src="./assets/images/dubai.png" class="w-full h-48 object-cover" alt="Dubai">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Dubai</h3>
+                    <p class="text-gray-600 mb-4">Experience luxury and innovation in this modern metropolis.</p>
+                    <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700">Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8">Find Locations on Map</h2>
+        <div class="rounded-lg overflow-hidden h-[600px]">
+            <div id="map" class="w-full h-full"></div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+    <script>
+        // Initialize map centered on London
+        const map = L.map('map').setView([51.505, -0.09], 4);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Featured locations
+        const locations = [
+            { name: 'London', coords: [51.505, -0.09] },
+            { name: 'Paris', coords: [48.8566, 2.3522] },
+            { name: 'Dubai', coords: [25.2048, 55.2708] }
+        ];
+
+        // Add markers for featured locations
+        locations.forEach(location => {
+            L.marker(location.coords)
+                .bindPopup(`<b>${location.name}</b>`)
+                .addTo(map);
+        });
+
+        // Add search control
+        const geocoder = L.Control.geocoder({
+            defaultMarkGeocode: false
+        })
+        .on('markgeocode', function(e) {
+            const bbox = e.geocode.bbox;
+            map.fitBounds([
+                [bbox.getSouth(), bbox.getWest()],
+                [bbox.getNorth(), bbox.getEast()]
+            ]);
+        })
+        .addTo(map);
+    </script>
+</body>
+</html>

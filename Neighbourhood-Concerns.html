@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neighborhood Support - Travel City</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./components/Navbar.js"></script>
+  <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://media.istockphoto.com/id/1320991884/photo/aerial-view-of-residential-distratic-at-major-mackenzie-dr-and-islinton-ave-detached-and.jpg?s=612x612&w=0&k=20&c=KY59fkCfg9zz9LkQRCRDn84j9xcNdG7NSgZ3jGJC81A=" alt="Neighborhood Support" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Supporting Our Neighborhoods</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Article Metadata -->
+            <div class="flex items-center space-x-4 mb-8 text-gray-600">
+                <img src="https://randomuser.me/api/portraits/women/82.jpg" alt="Jennifer Parker" class="w-12 h-12 rounded-full">
+                <div>
+                    <div class="font-semibold">Jennifer Parker</div>
+                    <div class="text-sm">
+                        <span>March 16, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>8 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Body -->
+            <article class="prose prose-lg max-w-none">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold mb-6">Our Commitment to Communities</h2>
+                    <p class="text-gray-600 mb-8">At TravelCity, we believe in responsible hosting that benefits both travelers and local communities. Our neighborhood support initiatives ensure harmonious coexistence between guests and residents.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <i class="fas fa-home text-purple-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-4">Noise Management</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>Quiet hours: 10 PM - 7 AM</li>
+                            <li>No parties policy</li>
+                            <li>Noise monitoring systems</li>
+                            <li>Quick response to complaints</li>
+                        </ul>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <i class="fas fa-users text-purple-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-4">Community Support</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>Local business partnerships</li>
+                            <li>Community feedback program</li>
+                            <li>Neighborhood watches</li>
+                            <li>Regular community meetings</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md mb-12">
+                    <h3 class="text-2xl font-bold mb-6">Reporting Issues</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-purple-100 p-2 rounded-full">
+                                <i class="fas fa-phone text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">24/7 Neighborhood Support</h4>
+                                <p class="text-gray-600">Call our dedicated hotline: 1-800-NEIGHBOR</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-purple-100 p-2 rounded-full">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email Support</h4>
+                                <p class="text-gray-600">neighborhood@travelcity.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">Report an Issue</button>
+                </div>
+            </article>
+
+            <!-- Social Share -->
+            <div class="border-t border-b border-gray-200 py-8 my-8">
+                <h3 class="text-lg font-semibold mb-4">Share this article</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <h2 class="text-2xl font-bold mb-8">Related Articles</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="#" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="h-48">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad" alt="Community Guidelines" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600">Community Guidelines</h3>
+                            <p class="text-gray-600">Essential rules for harmonious neighborhood living.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="h-48">
+                            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205" alt="Local Impact" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600">Positive Local Impact</h3>
+                            <p class="text-gray-600">How short-term rentals benefit local communities.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <h2 class="text-2xl font-bold mb-8">Comments</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form class="mb-8">
+                    <textarea class="w-full p-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent" rows="4" placeholder="Leave a comment..."></textarea>
+                    <button class="mt-4 px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">Post Comment</button>
+                </form>
+                <div class="space-y-6">
+                    <!-- Comment Template -->
+                    <div class="border-b border-gray-200 pb-6 last:border-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Michael Stevens" class="w-10 h-10 rounded-full">
+                            <div>
+                                <div class="font-semibold">Michael Stevens</div>
+                                <div class="text-sm text-gray-600">March 15, 2024</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">The noise management system has made a huge difference in our neighborhood. Response times to issues are excellent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+</body>
+</html>

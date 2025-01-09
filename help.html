@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Service - Travel City Help Center</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./components/Navbar.js"></script>
+  <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <div class="relative">
+        <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3" alt="Help Center" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center">
+            <h1 class="text-5xl text-white font-bold mb-8">Hi, how can we help?</h1>
+            <div class="relative w-full max-w-md">
+                <input type="text" class="w-full py-3 pl-6 pr-12 text-gray-700 bg-white border-2 border-purple-600 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Search help articles...">
+                <div class="absolute inset-y-0 right-0 flex items-center pr-5">
+                    <i class="fas fa-search text-purple-600"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">Popular Help Topics</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                <i class="fas fa-book text-4xl text-purple-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-3">How to book a trip</h3>
+                <p class="text-gray-600 mb-4">Learn the steps to book your next adventure with Travel City.</p>
+                <a href="#" class="text-purple-600 hover:text-purple-700 font-semibold inline-flex items-center">
+                    Read more
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+
+            <article class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                <i class="fas fa-calendar-alt text-4xl text-purple-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-3">Managing your bookings</h3>
+                <p class="text-gray-600 mb-4">Find out how to view and manage your current bookings.</p>
+                <a href="#" class="text-purple-600 hover:text-purple-700 font-semibold inline-flex items-center">
+                    Read more
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+
+            <article class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                <i class="fas fa-headset text-4xl text-purple-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-3">Contacting support</h3>
+                <p class="text-gray-600 mb-4">Get in touch with our support team for assistance.</p>
+                <a href="#" class="text-purple-600 hover:text-purple-700 font-semibold inline-flex items-center">
+                    Read more
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-lg font-semibold mb-2">How do I cancel my booking?</h3>
+                    <p class="text-gray-600">Visit your booking dashboard and click the cancel button. Our cancellation policy varies depending on the type of booking.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-lg font-semibold mb-2">What payment methods do you accept?</h3>
+                    <p class="text-gray-600">We accept all major credit cards, PayPal, and various local payment methods depending on your country.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-lg font-semibold mb-2">How do I contact customer service?</h3>
+                    <p class="text-gray-600">You can reach our customer service team 24/7 through chat, email, or phone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+    
+</body>
+</html>
