@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelCover for Hosts - Travel City</title>
+    <link rel="icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa" alt="Host Protection" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Host Protection Insurance</h1>
+                <p class="text-xl text-white mt-4">Up to $3,000,000 in liability coverage</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Coverage Highlights -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">What's Protected</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <i class="fas fa-home text-purple-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-4">Property Damage</h3>
+                <p class="text-gray-600">Coverage for damage to your property caused by guests</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <i class="fas fa-shield-alt text-purple-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-4">Liability Protection</h3>
+                <p class="text-gray-600">Protection against third-party claims for injury or property damage</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <i class="fas fa-gavel text-purple-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-4">Legal Support</h3>
+                <p class="text-gray-600">Access to legal assistance for hosting-related issues</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Tiers -->
+    <section class="bg-purple-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Coverage Plans</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Basic Protection</h3>
+                        <div class="text-3xl font-bold text-purple-600 mb-4">$1M</div>
+                        <p class="text-gray-600 mb-6">Essential coverage for hosts</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Property damage</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Basic liability</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>24/7 support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border-2 border-purple-600">
+                    <div class="bg-purple-600 text-white text-center py-2">RECOMMENDED</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Premium Protection</h3>
+                        <div class="text-3xl font-bold text-purple-600 mb-4">$2M</div>
+                        <p class="text-gray-600 mb-6">Enhanced coverage and benefits</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>All Basic features</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Extended liability</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Legal assistance</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Priority support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Ultimate Protection</h3>
+                        <div class="text-3xl font-bold text-purple-600 mb-4">$3M</div>
+                        <p class="text-gray-600 mb-6">Maximum coverage available</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>All Premium features</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Maximum liability</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Identity protection</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>VIP support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Claims Process -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Filing a Claim</h2>
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-8">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                    <div>
+                        <h3 class="font-bold mb-2">Document the Incident</h3>
+                        <p class="text-gray-600">Take photos and gather evidence of any damage or incidents</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                    <div>
+                        <h3 class="font-bold mb-2">Contact Support</h3>
+                        <p class="text-gray-600">Reach out to our 24/7 support team through the app or website</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                    <div>
+                        <h3 class="font-bold mb-2">Submit Claim</h3>
+                        <p class="text-gray-600">Fill out the claim form with all necessary details and documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="bg-red-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-6">24/7 Emergency Support</h2>
+                <div class="space-y-4">
+                    <div class="text-xl">
+                        <i class="fas fa-phone text-red-600 mr-2"></i>
+                        1-800-TRAVELCOVER
+                    </div>
+                    <div class="text-xl">
+                        <i class="fas fa-envelope text-red-600 mr-2"></i>
+                        emergency@travelcity.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+</body>
+</html>
