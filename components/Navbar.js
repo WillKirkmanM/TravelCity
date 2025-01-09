@@ -31,10 +31,24 @@ class NavbarComponent extends HTMLElement {
         <a href="./about.html" class="text-sm text-white hover:text-purple-400 transition-colors">About</a>
         <a href="./help.html" class="text-sm text-white hover:text-purple-400 transition-colors">Support</a>
           <div class="relative group">
-            <button class="text-white hover:text-purple-400 transition-colors flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-globe">
+            <button 
+              class="text-white hover:text-purple-400 transition-colors flex items-center"
+              aria-label="Language Selection"
+              role="button"
+              aria-expanded="false"
+              aria-controls="language-dropdown"
+              aria-haspopup="true">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                   width="24" 
+                   height="24" 
+                   viewBox="0 0 24 24" 
+                   fill="none"
+                   stroke="currentColor" 
+                   stroke-width="2" 
+                   stroke-linecap="round" 
+                   stroke-linejoin="round"
+                   aria-hidden="true"
+                   class="lucide lucide-globe">
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                 <path d="M2 12h20" />
@@ -66,9 +80,24 @@ class NavbarComponent extends HTMLElement {
               class="w-8 h-8 md:w-10 md:h-10 rounded-full" />
           </button>
         </div>
-        <button class="md:hidden text-white p-2" onclick="toggleMobileMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <button 
+          class="md:hidden text-white p-2" 
+          onclick="toggleMobileMenu()"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          role="button"
+          title="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               width="24" 
+               height="24" 
+               viewBox="0 0 24 24" 
+               fill="none"
+               stroke="currentColor" 
+               stroke-width="2" 
+               stroke-linecap="round" 
+               stroke-linejoin="round"
+               aria-hidden="true">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
