@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers - Travel City</title>
+    <link rel="icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img class="w-full h-96 object-cover" src="https://media.istockphoto.com/id/1446934118/photo/happy-business-man-listening-to-a-discussion-in-an-office.jpg?s=612x612&w=0&k=20&c=jiGivtsXnV0rZex5PEawRYVyNNzhkntyZDNeLXg7H0A=" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Join Our Journey</h1>
+                <p class="text-xl text-white mt-4">Build the future of travel with us</p>
+                <button class="mt-8 bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700">View Open Positions</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Department Filters -->
+    <div class="border-b">
+        <div class="container mx-auto px-4">
+            <div class="flex overflow-x-auto py-4 gap-4">
+                <button class="px-4 py-2 bg-purple-600 text-white rounded-full whitespace-nowrap">All Departments</button>
+                <button class="px-4 py-2 bg-white text-gray-700 rounded-full whitespace-nowrap hover:bg-gray-100">Engineering</button>
+                <button class="px-4 py-2 bg-white text-gray-700 rounded-full whitespace-nowrap hover:bg-gray-100">Product</button>
+                <button class="px-4 py-2 bg-white text-gray-700 rounded-full whitespace-nowrap hover:bg-gray-100">Design</button>
+                <button class="px-4 py-2 bg-white text-gray-700 rounded-full whitespace-nowrap hover:bg-gray-100">Marketing</button>
+                <button class="px-4 py-2 bg-white text-gray-700 rounded-full whitespace-nowrap hover:bg-gray-100">Customer Support</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Open Positions -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8">Open Positions</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Engineering</span>
+                <h3 class="text-xl font-bold mt-4">Senior Full Stack Developer</h3>
+                <p class="text-gray-600 mt-2">San Francisco, CA (Remote Available)</p>
+                <div class="mt-4 space-y-2">
+                    <div class="flex items-center text-gray-600">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Full-time</span>
+                    </div>
+                    <div class="flex items-center text-gray-600">
+                        <i class="fas fa-code-branch mr-2"></i>
+                        <span>5+ years experience</span>
+                    </div>
+                </div>
+                <button class="mt-6 bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Apply Now</button>
+            </div>
+
+            <!-- More job listings -->
+            <!-- Add similar job cards for other positions -->
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="bg-purple-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Why Join Us?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-globe text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Remote First</h3>
+                    <p class="text-gray-600">Work from anywhere in the world</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-chart-line text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Growth Opportunities</h3>
+                    <p class="text-gray-600">Fast-paced learning environment</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-heart text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Comprehensive Benefits</h3>
+                    <p class="text-gray-600">Health, dental, and vision coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Testimonials -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Chen" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl">Sarah Chen</h3>
+                    <p class="text-purple-600">Senior Product Designer</p>
+                    <p class="text-gray-600 mt-4">"The collaborative culture and opportunity to impact millions of travelers make every day exciting."</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="David Kumar" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl">David Kumar</h3>
+                    <p class="text-purple-600">Engineering Manager</p>
+                    <p class="text-gray-600 mt-4">"We're solving complex problems with cutting-edge technology while maintaining a great work-life balance."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Application Process</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-xl">Apply Online</h3>
+                            <p class="text-gray-600">Submit your application and resume</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-xl">Initial Interview</h3>
+                            <p class="text-gray-600">Virtual meeting with hiring manager</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-xl">Technical Assessment</h3>
+                            <p class="text-gray-600">Role-specific evaluation</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                        <div class="ml-4">
+                            <h3 class="font-bold text-xl">Final Rounds</h3>
+                            <p class="text-gray-600">Team interviews and culture fit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+</body>
+</html>
