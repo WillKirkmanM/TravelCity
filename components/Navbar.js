@@ -25,7 +25,7 @@ class NavbarComponent extends HTMLElement {
           <img src="https://avatars.githubusercontent.com/u/138057124?s=200&v=4 " class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
         </a>
         <div class="hidden md:flex items-center space-x-6">
-        <a href="./NewsRoom.html" class="text-sm text-white hover:text-purple-400 transition-colors">Newsroom</a>
+        <a href="./Newsroom.html" class="text-sm text-white hover:text-purple-400 transition-colors">Newsroom</a>
         <a href="./TravelCityYourHome.html" class="text-sm text-white hover:text-purple-400 transition-colors">TravelCity Your Home</a>
         <a href="./CommunityForum.html" class="text-sm text-white hover:text-purple-400 transition-colors">Community Forum</a>
         <a href="./about.html" class="text-sm text-white hover:text-purple-400 transition-colors">About</a>
