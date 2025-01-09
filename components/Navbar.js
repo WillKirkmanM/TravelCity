@@ -22,7 +22,7 @@ class NavbarComponent extends HTMLElement {
       </style>
       <nav class="flex items-center justify-between px-4 py-2 fixed w-full top-0 left-0 z-50">
         <a href="./">
-          <img src="./assets/images/logo.png" class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
+          <img src="https://avatars.githubusercontent.com/u/138057124?s=200&v=4 " class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
         </a>
         <div class="hidden md:flex items-center space-x-6">
         <a href="./NewsRoom.html" class="text-sm text-white hover:text-purple-400 transition-colors">Newsroom</a>
