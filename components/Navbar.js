@@ -3,21 +3,30 @@ class NavbarComponent extends HTMLElement {
     this.innerHTML = `
       <style>
         @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes slideDown {
+          from { transform: translateY(-100%); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
         }
         .fade-in {
-          animation: fadeIn 0.6s ease-out;
-          animation-fill-mode: forwards;
+          animation: fadeIn 0.6s ease-out forwards;
         }
-
         .navbar-black {
           background-color: black;
           animation: fadeIn 0.5s ease;
+        }
+        #mobileMenu {
+          transform-origin: top;
+          transition: all 0.3s ease-in-out;
+          display: none;
+          opacity: 0;
+        }
+        #mobileMenu.active {
+          display: block;
+          opacity: 1;
+          animation: slideDown 0.3s ease-in-out forwards;
         }
       </style>
       <nav class="flex items-center justify-between px-4 py-2 fixed w-full top-0 left-0 z-50">
@@ -81,13 +90,11 @@ class NavbarComponent extends HTMLElement {
           </button>
         </div>
         <button 
+          id="hamburgerBtn"
           class="md:hidden text-white p-2" 
-          onclick="toggleMobileMenu()"
           aria-label="Toggle navigation menu"
           aria-expanded="false"
-          aria-controls="mobileMenu"
-          role="button"
-          title="Open menu">
+          aria-controls="mobileMenu">
           <svg xmlns="http://www.w3.org/2000/svg" 
                width="24" 
                height="24" 
@@ -104,8 +111,12 @@ class NavbarComponent extends HTMLElement {
           </svg>
         </button>
       </nav>
-      <div class="hidden md:hidden bg-white absolute top-full left-0 right-0 shadow-lg p-4" id="mobileMenu">
-        <a href="#" class="block py-2 text-sm">Travel City near you</a>
+      <div id="mobileMenu" class="md:hidden bg-white fixed top-[48px] left-0 right-0 shadow-lg p-4 z-40">
+        <a href="./Newsroom.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Newsroom</a>
+        <a href="./TravelCityYourHome.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">TravelCity Your Home</a>
+        <a href="./CommunityForum.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Community Forum</a>
+        <a href="./about.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">About</a>
+        <a href="./help.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Support</a>
         <hr class="my-2">
         <div class="flex items-center space-x-4 py-2">
           <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile" class="w-8 h-8 rounded-full" />
@@ -114,13 +125,32 @@ class NavbarComponent extends HTMLElement {
       </div>
     `;
 
-    window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('nav');
-        if (window.scrollY > 0) {
+    // Add scroll event listener
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('nav');
+      if (window.scrollY > 0) {
         navbar.classList.add('navbar-black');
-        } else {
+      } else {
         navbar.classList.remove('navbar-black');
-        }
+      }
+    });
+
+    // Add hamburger menu toggle
+    const hamburgerBtn = this.querySelector('#hamburgerBtn');
+    const mobileMenu = this.querySelector('#mobileMenu');
+
+    hamburgerBtn.addEventListener('click', () => {
+      const isExpanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+      hamburgerBtn.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburgerBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('active');
+      }
     });
   }
 }
