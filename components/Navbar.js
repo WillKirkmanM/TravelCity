@@ -21,15 +21,15 @@ class NavbarComponent extends HTMLElement {
         }
       </style>
       <nav class="flex items-center justify-between px-4 py-2 fixed w-full top-0 left-0 z-50">
-        <a href="/">
+        <a href="./">
           <img src="./assets/images/logo.png" class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
         </a>
         <div class="hidden md:flex items-center space-x-6">
-        <a href="/NewsRoom.html" class="text-sm text-white hover:text-purple-400 transition-colors">Newsroom</a>
-        <a href="/TravelCityYourHome.html" class="text-sm text-white hover:text-purple-400 transition-colors">TravelCity Your Home</a>
-        <a href="/CommunityForum.html" class="text-sm text-white hover:text-purple-400 transition-colors">Community Forum</a>
-        <a href="/about.html" class="text-sm text-white hover:text-purple-400 transition-colors">About</a>
-        <a href="/help.html" class="text-sm text-white hover:text-purple-400 transition-colors">Support</a>
+        <a href="./NewsRoom.html" class="text-sm text-white hover:text-purple-400 transition-colors">Newsroom</a>
+        <a href="./TravelCityYourHome.html" class="text-sm text-white hover:text-purple-400 transition-colors">TravelCity Your Home</a>
+        <a href="./CommunityForum.html" class="text-sm text-white hover:text-purple-400 transition-colors">Community Forum</a>
+        <a href="./about.html" class="text-sm text-white hover:text-purple-400 transition-colors">About</a>
+        <a href="./help.html" class="text-sm text-white hover:text-purple-400 transition-colors">Support</a>
           <div class="relative group">
             <button class="text-white hover:text-purple-400 transition-colors flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
