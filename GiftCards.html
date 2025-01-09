@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Cards - Travel City</title>
+    <link rel="icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0" alt="Gift Cards" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold">Give the Gift of Travel</h1>
+                <p class="text-xl text-white mt-4">Perfect for any occasion</p>
+                <button class="mt-8 bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700">Purchase Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gift Card Options -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8 text-center">Choose Your Gift Card</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-purple-600 p-6 text-white text-center">
+                    <h3 class="text-2xl font-bold">Classic Digital</h3>
+                    <p class="mt-2">Instant delivery</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Email delivery
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Custom message
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Instant redemption
+                        </li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">Select</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border-2 border-purple-600">
+                <div class="bg-purple-600 p-6 text-white text-center">
+                    <span class="bg-white text-purple-600 px-3 py-1 rounded-full text-sm">MOST POPULAR</span>
+                    <h3 class="text-2xl font-bold mt-2">Premium Physical</h3>
+                    <p class="mt-2">Elegant gift box</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Physical card
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Gift packaging
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Personalized note
+                        </li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">Select</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-purple-600 p-6 text-white text-center">
+                    <h3 class="text-2xl font-bold">Corporate Bulk</h3>
+                    <p class="mt-2">Volume discount</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Bulk orders
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Custom branding
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Special rates
+                        </li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Customizer -->
+    <section class="bg-purple-50 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Customize Your Gift</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-xl mb-4">Card Details</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Amount</label>
+                                <select class="w-full p-3 border rounded-lg">
+                                    <option>$50</option>
+                                    <option>$100</option>
+                                    <option>$200</option>
+                                    <option>$500</option>
+                                    <option>Custom Amount</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Recipient Name</label>
+                                <input type="text" class="w-full p-3 border rounded-lg">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Personal Message</label>
+                                <textarea class="w-full p-3 border rounded-lg" rows="4"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-4">Card Preview</h3>
+                        <div class="bg-purple-600 text-white p-6 rounded-lg">
+                            <div class="flex justify-between items-start mb-8">
+                                <img src="./assets/images/logo-white.png" alt="Travel City" class="h-8">
+                                <div class="text-2xl font-bold">$100</div>
+                            </div>
+                            <p class="text-sm opacity-90">To: [Recipient Name]</p>
+                            <p class="mt-4 italic">[Your message will appear here]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Balance Checker -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8 text-center">Check Gift Card Balance</h2>
+        <div class="max-w-xl mx-auto">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Card Number</label>
+                        <input type="text" class="w-full p-3 border rounded-lg" placeholder="Enter 16-digit card number">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">PIN</label>
+                        <input type="password" class="w-full p-3 border rounded-lg" placeholder="Enter 4-digit PIN">
+                    </div>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700">Check Balance</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-md">
+                        <button class="w-full p-4 text-left font-semibold flex justify-between items-center">
+                            How do I redeem my gift card?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="p-4 border-t">
+                            Enter your gift card number during checkout or add it to your account balance.
+                        </div>
+                    </div>
+                    <!-- Add more FAQ items -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+</body>
+</html>
