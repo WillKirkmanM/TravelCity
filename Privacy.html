@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Travel City</title>
+  <link rel="icon" href="./assets/images/logo.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./components/Navbar.js"></script>
+  <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54" alt="Privacy Policy" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Your Privacy Matters</h1>
+            </div>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Article Metadata -->
+            <div class="flex items-center space-x-4 mb-8 text-gray-600">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Chen" class="w-12 h-12 rounded-full">
+                <div>
+                    <div class="font-semibold">David Chen</div>
+                    <div class="text-sm">
+                        <span>March 16, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>12 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Body -->
+            <article class="prose prose-lg max-w-none">
+                <div class="space-y-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Data Collection</h2>
+                        <div class="bg-purple-50 p-6 rounded-lg mb-6">
+                            <h3 class="font-bold mb-4">Information We Collect:</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>Name and contact information</li>
+                                <li>Booking history and preferences</li>
+                                <li>Payment information</li>
+                                <li>Device and usage data</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">How We Use Your Data</h2>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-book-open text-purple-600 text-2xl mb-4"></i>
+                                <h3 class="font-bold mb-3">Service Improvement</h3>
+                                <p class="text-gray-600">Enhancing your booking experience and customer support</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-shield-alt text-purple-600 text-2xl mb-4"></i>
+                                <h3 class="font-bold mb-3">Security</h3>
+                                <p class="text-gray-600">Protecting your account and preventing fraud</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Your Rights</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-eye text-purple-600 text-xl mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Access Your Data</h4>
+                                    <p class="text-gray-600">Request a copy of your personal information</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-edit text-purple-600 text-xl mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Update Information</h4>
+                                    <p class="text-gray-600">Modify or correct your personal details</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <i class="fas fa-trash text-purple-600 text-xl mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-2">Delete Data</h4>
+                                    <p class="text-gray-600">Request removal of your information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+                        <p class="text-gray-600 mb-6">For privacy-related inquiries:</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                                <span>privacy@travelcity.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-phone text-purple-600"></i>
+                                <span>1-800-PRIVACY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Related Articles -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="#" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="h-48">
+                            <img src="https://images.unsplash.com/photo-1560472355-536de3962603" alt="Data Security" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600">Data Security Guide</h3>
+                            <p class="text-gray-600">How we protect your information</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="h-48">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Cookie Policy" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600">Understanding Cookies</h3>
+                            <p class="text-gray-600">Learn about our cookie policy</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+</body>
+</html>
