@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cancellation Options - Travel City</title>
+  <link rel="icon" href="./assets/images/logo.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./components/Navbar.js"></script>
+  <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d" alt="Cancellation Options" class="w-full h-96 object-cover" />
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Flexible Cancellation Options</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <!-- Article Metadata -->
+            <div class="flex items-center space-x-4 mb-8 text-gray-600">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Thomas Anderson" class="w-12 h-12 rounded-full">
+                <div>
+                    <div class="font-semibold">Thomas Anderson</div>
+                    <div class="text-sm">
+                        <span>March 16, 2024</span>
+                        <span class="mx-2">•</span>
+                        <span>7 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Body -->
+            <article class="prose prose-lg max-w-none">
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold mb-4">Flexible</h3>
+                            <div class="text-purple-600 font-bold mb-2">Full refund</div>
+                            <p class="text-gray-600">Cancel up to 24 hours before check-in</p>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>100% refund</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>No questions asked</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Instant processing</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border-2 border-purple-600">
+                        <div class="text-center mb-6">
+                            <div class="text-purple-600 font-semibold mb-2">MOST POPULAR</div>
+                            <h3 class="text-xl font-bold mb-4">Moderate</h3>
+                            <div class="text-purple-600 font-bold mb-2">Partial refund</div>
+                            <p class="text-gray-600">Cancel up to 5 days before check-in</p>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>50% refund</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Processing in 48h</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Cancel for any reason</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-center mb-6">
+                            <h3 class="text-xl font-bold mb-4">Non-refundable</h3>
+                            <div class="text-purple-600 font-bold mb-2">Best price</div>
+                            <p class="text-gray-600">No cancellation allowed</p>
+                        </div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Lowest rates</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Date changes allowed</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Travel credit offered</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold mb-6">Special Circumstances</h2>
+                <div class="bg-purple-50 p-6 rounded-lg mb-12">
+                    <p class="text-gray-700 mb-4">We understand that sometimes unexpected events occur. Full refunds may be available for:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Medical emergencies</li>
+                        <li>Natural disasters</li>
+                        <li>Travel restrictions</li>
+                        <li>Flight cancellations</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-3xl font-bold mb-6">How to Cancel</h2>
+                <div class="space-y-6 mb-12">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-purple-100 p-2 rounded-full">
+                            <i class="fas fa-sign-in-alt text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Log into your account</h4>
+                            <p class="text-gray-600">Access your booking dashboard</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-purple-100 p-2 rounded-full">
+                            <i class="fas fa-calendar-alt text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Select your booking</h4>
+                            <p class="text-gray-600">Find the reservation you want to cancel</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-purple-100 p-2 rounded-full">
+                            <i class="fas fa-times-circle text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Cancel reservation</h4>
+                            <p class="text-gray-600">Follow the cancellation steps</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Social Share -->
+            <div class="border-t border-b border-gray-200 py-8 my-8">
+                <h3 class="text-lg font-semibold mb-4">Share this article</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-purple-600 hover:text-purple-700">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <h2 class="text-2xl font-bold mb-8">Related Articles</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="#" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="h-48">
+                            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e" alt="Booking Tips" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600">Smart Booking Tips</h3>
+                            <p class="text-gray-600">How to make the most of our flexible booking options.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+                        <div class="h-48">
+                            <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d" alt="Travel Insurance" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-bold text-xl mb-2 group-hover:text-purple-600">Travel Insurance Benefits</h3>
+                            <p class="text-gray-600">Why adding travel insurance is a smart choice.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="max-w-4xl mx-auto mt-16">
+            <h2 class="text-2xl font-bold mb-8">Comments</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form class="mb-8">
+                    <textarea class="w-full p-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent" rows="4" placeholder="Leave a comment..."></textarea>
+                    <button class="mt-4 px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">Post Comment</button>
+                </form>
+                <div class="space-y-6">
+                    <!-- Comment Template -->
+                    <div class="border-b border-gray-200 pb-6 last:border-0">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Lisa Johnson" class="w-10 h-10 rounded-full">
+                            <div>
+                                <div class="font-semibold">Lisa Johnson</div>
+                                <div class="text-sm text-gray-600">March 15, 2024</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">The flexible cancellation option saved me when I had to change my plans last minute. Refund was processed within hours!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+</body>
+</html>
