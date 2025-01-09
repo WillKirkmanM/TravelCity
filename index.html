@@ -79,9 +79,12 @@
       </form>
 
       <!-- Search Button -->
-      <a href="./flights/tokyo.html">
+      <a href="./flights/tokyo.html" aria-label="Search for Flights">
         <div class="absolute right-6 top-1/2 -translate-y-1/2">
           <button
+          type="button"
+          aria-label="Search"
+          aria-hidden="true"
           class="w-12 h-12 flex items-center justify-center bg-purple-600 hover:bg-purple-700 
           rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
           <i class="fas fa-search text-white"></i>
@@ -189,12 +192,6 @@
     animation: bounce 1.5s infinite;
   }
 </style>
-<script>
-  function toggleMobileMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('hidden');
-  }
-</script>
 
 <div class="container mx-auto max-w-6xl pt-32">
   <h2 class="sub-title font-bold text-2xl mb-6 flex items-center gap-2 border-b pb-2">
