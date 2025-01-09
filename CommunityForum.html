@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Forum - Travel City</title>
+    <link rel="icon" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./components/Navbar.js"></script>
+    <script src="./components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <navbar-component></navbar-component>
+
+    <!-- Hero Section -->
+    <div class="bg-purple-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Host Community Forum</h1>
+            <p class="text-xl opacity-90">Connect, share, and learn from fellow hosts</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Left Sidebar - Categories -->
+            <div class="md:w-1/4">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="font-bold text-xl mb-4">Categories</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="flex items-center justify-between text-gray-700 hover:text-purple-600">
+                                <span>Getting Started</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded-full text-sm">245</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center justify-between text-gray-700 hover:text-purple-600">
+                                <span>Hosting Tips</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded-full text-sm">182</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center justify-between text-gray-700 hover:text-purple-600">
+                                <span>Property Management</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded-full text-sm">159</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center justify-between text-gray-700 hover:text-purple-600">
+                                <span>Guest Relations</span>
+                                <span class="bg-gray-100 px-2 py-1 rounded-full text-sm">128</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="md:w-2/4">
+                <!-- Search and Sort -->
+                <div class="flex gap-4 mb-6">
+                    <div class="flex-grow">
+                        <input type="text" placeholder="Search discussions..." class="w-full p-3 rounded-lg border focus:ring-2 focus:ring-purple-600">
+                    </div>
+                    <select class="p-3 rounded-lg border focus:ring-2 focus:ring-purple-600">
+                        <option>Most Recent</option>
+                        <option>Most Popular</option>
+                        <option>Most Replies</option>
+                    </select>
+                </div>
+
+                <!-- Discussion List -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Chen" class="w-12 h-12 rounded-full">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="font-bold text-lg mb-2">Tips for winter hosting preparation</h3>
+                                <p class="text-gray-600 mb-4">Looking for advice on preparing my property for winter guests...</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <span>Posted by Sarah Chen</span>
+                                    <span class="mx-2">•</span>
+                                    <span>2 hours ago</span>
+                                    <span class="mx-2">•</span>
+                                    <span>32 replies</span>
+                                </div>
+                                <div class="flex gap-2 mt-4">
+                                    <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Winter</span>
+                                    <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Maintenance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- More discussion items -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Torres" class="w-12 h-12 rounded-full">
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="font-bold text-lg mb-2">Smart home device recommendations?</h3>
+                                <p class="text-gray-600 mb-4">What smart locks and thermostats are you using?...</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <span>Posted by Michael Torres</span>
+                                    <span class="mx-2">•</span>
+                                    <span>5 hours ago</span>
+                                    <span class="mx-2">•</span>
+                                    <span>45 replies</span>
+                                </div>
+                                <div class="flex gap-2 mt-4">
+                                    <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Technology</span>
+                                    <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center mt-8">
+                    <button class="px-4 py-2 rounded-lg border hover:bg-gray-50">Previous</button>
+                    <button class="px-4 py-2 rounded-lg bg-purple-600 text-white mx-2">1</button>
+                    <button class="px-4 py-2 rounded-lg border hover:bg-gray-50">2</button>
+                    <button class="px-4 py-2 rounded-lg border hover:bg-gray-50">3</button>
+                    <button class="px-4 py-2 rounded-lg border hover:bg-gray-50">Next</button>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="md:w-1/4">
+                <!-- New Post Button -->
+                <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 mb-6">
+                    Create New Post
+                </button>
+
+                <!-- Popular Topics -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="font-bold text-xl mb-4">Trending Topics</h2>
+                    <div class="space-y-4">
+                        <a href="#" class="block">
+                            <div class="text-sm font-semibold text-gray-700 hover:text-purple-600">Best cleaning services in NYC</div>
+                            <div class="text-xs text-gray-500">89 comments</div>
+                        </a>
+                        <a href="#" class="block">
+                            <div class="text-sm font-semibold text-gray-700 hover:text-purple-600">Tax deduction guidelines 2024</div>
+                            <div class="text-xs text-gray-500">76 comments</div>
+                        </a>
+                        <a href="#" class="block">
+                            <div class="text-sm font-semibold text-gray-700 hover:text-purple-600">Noise complaints solutions</div>
+                            <div class="text-xs text-gray-500">64 comments</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+</body>
+</html>
