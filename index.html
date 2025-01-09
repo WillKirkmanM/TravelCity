@@ -10,121 +10,87 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <script src="./js/index.js"></script>
+
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./components/Navbar.js"></script>
+  <script src="./components/Footer.js"></script>
+
 </head>
 
-<head>
-  <style>
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    .fade-in {
-      animation: fadeIn 2s ease;
-    }
-
-    .navbar-black {
-      background-color: black;
-      animation: fadeIn 0.5s ease
-    }
-  </style>
-</head>
+<navbar-component></navbar-component>
 
 <body class="min-h-screen">
   <div class="absolute top-0 left-0 w-full h-full overflow-hidden transition-opacity duration-100" id="videoContainer">
     <div class="absolute inset-0 bg-black/30"></div>
-    <video class="w-full h-full object-cover blur-sm" autoplay muted loop playsinline>
+    <video class="w-full h-full object-cover blur-sm brightness-50" autoplay muted loop playsinline>
       <source src="./assets/videos/travel.mp4" type="video/mp4">
     </video>
   </div>
-
-  <div class="relative min-h-screen">
-    <nav class="flex items-center justify-between px-4 py-2 fixed w-full top-0 left-0 z-50">
-      <a href="">
-        <img src="./assets/images/logo.png" class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
-      </a>
-      <div class="hidden md:flex items-center space-x-6">
-        <a href="#" class="text-sm text-white hover:text-purple-400 transition-colors">Travel City near you</a>
-        <button class="text-white hover:text-purple-400 transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-globe">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-            <path d="M2 12h20" />
-          </svg>
-        </button>
-        <button class="flex items-center">
-          <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile"
-            class="w-8 h-8 md:w-10 md:h-10 rounded-full" />
-        </button>
-      </div>
-      <button class="md:hidden text-white p-2" onclick="toggleMobileMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-    </nav>
-
-    <div class="hidden md:hidden bg-white absolute top-full left-0 right-0 shadow-lg p-4" id="mobileMenu">
-      <a href="#" class="block py-2 text-sm">Travel City near you</a>
-      <hr class="my-2">
-      <div class="flex items-center space-x-4 py-2">
-        <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile" class="w-8 h-8 rounded-full" />
-        <span class="text-sm">My Profile</span>
-      </div>
-    </div>
-
-    <div class="flex flex-col items-center justify-center h-[calc(100vh-80px)]">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-24 text-center fade-in">Where to?</h1>
-
-      <div class="w-full px-4 mb-8 fade-in">
-        <div
-          class="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm rounded-2xl md:rounded-full border-2 border-gray-300/50 shadow-xl py-2 px-2 md:px-4">
-          <form class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
-            <div class="flex flex-col md:border-r border-gray-200 p-2">
-              <label class="text-xs md:text-sm text-gray-700 mb-1 ml-2">Location</label>
-              <input type="text" placeholder="Where are you going?"
-                class="w-full p-2 border-none rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-600" />
-            </div>
-            <div class="flex flex-col md:border-r border-gray-200 p-2">
-              <label class="text-xs md:text-sm text-gray-700 mb-1 ml-2">Check in</label>
-              <input type="date" placeholder="Add Date"
-                class="w-full p-2 border-none rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-600" />
-            </div>
-            <div class="flex flex-col md:border-r border-gray-200 p-2">
-              <label class="text-xs md:text-sm text-gray-700 mb-1 ml-2">Check out</label>
-              <input type="date" placeholder="Add Date"
-                class="w-full p-2 border-none rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-600" />
-            </div>
-            <div class="flex flex-col p-2">
-              <label class="text-xs md:text-sm text-gray-700 mb-1 ml-2">Guest</label>
-              <div class="relative">
-                <input type="number" min="1" step="1" placeholder="Add Guest" id="guestInput"
-                  class="w-full p-2 pr-12 border-none rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-600" />
-                <button type="submit"
-                  class="absolute right-1 top-1/2 -translate-y-1/2 bg-purple-600 hover:bg-purple-700 p-2 md:p-3 rounded-full transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8" />
-                    <path d="m21 21-4.3-4.3" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </form>
+<div class="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-4 py-8">
+  <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-12 md:mb-24 text-center fade-in">Where to?</h1>
+  <div class="w-full max-w-5xl mx-auto fade-in">
+    <div class="relative bg-white/95 backdrop-blur-md rounded-xl md:rounded-full shadow-lg p-4 md:p-6 
+      transition-all duration-300 hover:shadow-xl border-2 border-purple-500/20 hover:border-purple-500/30">
+      <form id="search-form" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pr-16">
+<!-- Location Input -->
+<div class="flex flex-col md:border-r border-gray-200/50 p-2">
+  <label for="location" class="text-sm text-gray-600 mb-2 ml-2 font-medium">Location</label>
+  <div class="relative">
+    <i class="fas fa-map-marker-alt absolute left-3 top-1/2 -translate-y-1/2 text-purple-400"></i>
+    <input type="text" id="location" list="countries" placeholder="Where are you going?"
+      class="w-full pl-10 pr-4 py-3 rounded-full text-sm focus:outline-none focus:ring-2 
+      focus:ring-purple-400 bg-gray-50/80 hover:bg-white transition-all duration-300" />
+    <datalist id="countries"></datalist>
+  </div>
+</div>
+        <!-- Check-in Date -->
+        <div class="flex flex-col md:border-r border-gray-200/50 p-2">
+          <label for="check-in" class="text-sm text-gray-600 mb-2 ml-2 font-medium">Check in</label>
+          <div class="relative">
+            <i class="far fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-purple-400"></i>
+            <input type="date" id="check-in"
+              class="w-full pl-10 pr-4 py-3 rounded-full text-sm focus:outline-none focus:ring-2 
+              focus:ring-purple-400 bg-gray-50/80 hover:bg-white transition-all duration-300" />
+          </div>
         </div>
-      </div>
 
+        <!-- Check-out Date -->
+        <div class="flex flex-col md:border-r border-gray-200/50 p-2">
+          <label for="check-out" class="text-sm text-gray-600 mb-2 ml-2 font-medium">Check out</label>
+          <div class="relative">
+            <i class="far fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-purple-400"></i>
+            <input type="date" id="check-out"
+              class="w-full pl-10 pr-4 py-3 rounded-full text-sm focus:outline-none focus:ring-2 
+              focus:ring-purple-400 bg-gray-50/80 hover:bg-white transition-all duration-300" />
+          </div>
+        </div>
+
+        <!-- Guests Input -->
+        <div class="flex flex-col p-2">
+          <label for="guests" class="text-sm text-gray-600 mb-2 ml-2 font-medium">Guests</label>
+          <div class="relative">
+            <i class="fas fa-user absolute left-3 top-1/2 -translate-y-1/2 text-purple-400"></i>
+            <input type="number" id="guests" min="1" max="20" value="2"
+              class="w-full pl-10 pr-4 py-3 rounded-full text-sm focus:outline-none focus:ring-2 
+              focus:ring-purple-400 bg-gray-50/80 hover:bg-white transition-all duration-300" />
+          </div>
+        </div>
+      </form>
+
+      <!-- Search Button -->
+      <a href="/flights/tokyo.html">
+        <div class="absolute right-6 top-1/2 -translate-y-1/2">
+          <button
+          class="w-12 h-12 flex items-center justify-center bg-purple-600 hover:bg-purple-700 
+          rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
+          <i class="fas fa-search text-white"></i>
+        </button>
+      </div>
+    </a>
+    </div>
+  </div>
+</div>
       <script>
         document.getElementById('guestInput').addEventListener('keypress', function (e) {
           if (!/[0-9]/.test(e.key)) {
@@ -230,7 +196,7 @@
   }
 </script>
 
-<div class="container mx-auto max-w-6xl pt-12">
+<div class="container mx-auto max-w-6xl pt-32">
   <h2 class="sub-title font-bold text-2xl mb-6 flex items-center gap-2 border-b pb-2">
     <span>Popular In </span>
     <div class="flex items-center gap-2">
@@ -309,6 +275,7 @@
 
       <div
         class="absolute top-16 left-1/2 -translate-x-1/2 w-[95%] h-[300px] bg-black/70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 text-white">
+        <a href="/flights/dubai.html">
         <div class="text-center h-full flex flex-col items-center justify-center">
           <div class="space-y-3">
             <h4 class="font-semibold text-lg">Discover Dubai</h4>
@@ -318,8 +285,8 @@
             </p>
             <button
               class="inline-flex items-center justify-center space-x-2 bg-white/90 text-black px-4 py-2 rounded-full text-sm hover:bg-white transition-colors mt-2">
-              <span>See Flights</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                <span>See Flights</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
@@ -327,6 +294,7 @@
             </button>
           </div>
         </div>
+      </a>
       </div>
     </div>
 
@@ -360,6 +328,7 @@
 
       <div
         class="absolute top-16 left-1/2 -translate-x-1/2 w-[95%] h-[300px] bg-black/70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 text-white">
+        <a href="/flights/new-york.html">
         <div class="text-center h-full flex flex-col items-center justify-center">
           <div class="space-y-3">
             <h4 class="font-semibold text-lg">Discover New York</h4>
@@ -369,8 +338,8 @@
             </p>
             <button
               class="inline-flex items-center justify-center space-x-2 bg-white/90 text-black px-4 py-2 rounded-full text-sm hover:bg-white transition-colors mt-2">
-              <span>See Flights</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                <span>See Flights</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
@@ -378,6 +347,7 @@
             </button>
           </div>
         </div>
+      </a>
       </div>
     </div>
 
@@ -411,24 +381,28 @@
 
       <div
         class="absolute top-16 left-1/2 -translate-x-1/2 w-[95%] h-[300px] bg-black/70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 text-white">
-        <div class="text-center h-full flex flex-col items-center justify-center">
-          <div class="space-y-3">
-            <h4 class="font-semibold text-lg">Discover Paris</h4>
-            <p class="text-sm leading-relaxed">
-              Fall in love with the City of Light. From the iconic Eiffel Tower to charming cafés and world-renowned art
-              at the Louvre, experience true French romance.
-            </p>
-            <button
+        <a href="/flights/paris.html">
+          <div class="text-center h-full flex flex-col items-center justify-center">
+            <div class="space-y-3">
+              <h4 class="font-semibold text-lg">Discover Paris</h4>
+              <p class="text-sm leading-relaxed">
+                Fall in love with the City of Light. From the iconic Eiffel Tower to charming cafés and world-renowned art
+                at the Louvre, experience true French romance.
+              </p>
+              <button
               class="inline-flex items-center justify-center space-x-2 bg-white/90 text-black px-4 py-2 rounded-full text-sm hover:bg-white transition-colors mt-2">
-              <span>See Flights</span>
+              <a href="/flights/paris.html">
+                <span>See Flights</span>
+              </a>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
               </svg>
             </button>
           </div>
         </div>
+      </a>
       </div>
     </div>
 
@@ -462,31 +436,33 @@
 
       <div
         class="absolute top-16 left-1/2 -translate-x-1/2 w-[95%] h-[300px] bg-black/70 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 text-white">
-        <div class="text-center h-full flex flex-col items-center justify-center">
-          <div class="space-y-3">
-            <h4 class="font-semibold text-lg">Discover Tokyo</h4>
-            <p class="text-sm leading-relaxed">
-              Immerse yourself in Japan's capital where tradition meets future. Experience bustling Shibuya, serene
-              temples, and world-famous cuisine.
-            </p>
-            <button
+        <a href="/flights/tokyo.html">
+          <div class="text-center h-full flex flex-col items-center justify-center">
+            <div class="space-y-3">
+              <h4 class="font-semibold text-lg">Discover Tokyo</h4>
+              <p class="text-sm leading-relaxed">
+                Immerse yourself in Japan's capital where tradition meets future. Experience bustling Shibuya, serene
+                temples, and world-famous cuisine.
+              </p>
+              <button
               class="inline-flex items-center justify-center space-x-2 bg-white/90 text-black px-4 py-2 rounded-full text-sm hover:bg-white transition-colors mt-2">
               <span>See Flights</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </button>
-          </div>
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
         </div>
+      </div>
+    </a>
       </div>
     </div>
   </div>
 </div>
 </div>
 
-<script>
+<!-- <script>
   async function getUserLocation() {
     try {
       const response = await fetch('https://ipapi.co/json/');
@@ -535,12 +511,15 @@
   }
 
   document.addEventListener('DOMContentLoaded', updateCardInfo);
-</script>
+</script> -->
+
 </div>
 <div class="container mx-auto px-4 py-8 max-w-7xl">
   <h2 class="text-3xl text-gray-800">Exclusives</h2>
-  <p class="mb-8 text-gray-500">Handpicked destinations with special deals just for you • <span
+  <a href="/exclusives.html" class="flex items-center gap-2 mt-4">
+    <p class="mb-8 text-gray-500">Handpicked destinations with special deals just for you • <span
       class="text-purple-600 hover:text-purple-700 cursor-pointer">See all exclusives →</span></p>
+  </a>
   <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
     <div
       class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer transform transition-all duration-300 hover:-translate-y-2">
@@ -666,8 +645,10 @@
 
 <section class="container mx-auto px-4 py-16 max-w-7xl">
   <h2 class="text-3xl font-bold text-gray-800">Stay near City of London's top sights</h2>
-  <p class="mb-8 text-gray-500">Discover iconic landmarks and hidden gems recommended by locals • <span
+  <a href="/Locations.html">
+    <p class="mb-8 text-gray-500">Discover iconic landmarks and hidden gems recommended by locals • <span
       class="text-purple-600 hover:text-purple-700 cursor-pointer">See all locations →</span></p>
+  </a>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -736,8 +717,10 @@
 
 <section class="container mx-auto px-4 py-16 max-w-7xl">
   <h2 class="text-3xl text-gray-800">Prefer any of these?</h2>
-  <p class="mb-8 text-gray-500">Choose from our curated selection of premium services • <span
+  <a href="/Services.html">
+    <p class="mb-8 text-gray-500">Choose from our curated selection of premium services • <span
       class="text-purple-600 hover:text-purple-700 cursor-pointer">See all services →</span></p>
+    </a>
 
   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
     <div
@@ -814,9 +797,11 @@
 
 <div class="container mx-auto px-4 py-16 max-w-7xl">
   <h2 class="text-3xl text-gray-800">Travellers Stories</h2>
-  <p class=" mb-8 text-gray-500">Read inspiring stories from fellow travelers around the world • <span
+  <a href="/stories.html">
+    <p class=" mb-8 text-gray-500">Read inspiring stories from fellow travelers around the world • <span
       class="text-purple-600 hover:text-purple-700 cursor-pointer">See all stories →</span></p>
-
+  </a>
+      
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <div
       class="group bg-white rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2">
@@ -861,6 +846,7 @@
     </div>
   </div>
 </div>
+<!-- 
 <footer class="bg-gray-100 px-8 py-12 mt-16">
   <div class="container mx-auto max-w-full">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
@@ -935,7 +921,8 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
+<footer-component></footer-component>
 </body>
 
 </div>
