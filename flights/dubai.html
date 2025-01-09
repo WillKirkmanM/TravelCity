@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai Flights - Travel City</title>
+  <link rel="icon" href="./assets/images/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../components/Navbar.js"></script>
+  <script src="../components/Footer.js"></script>
+</head>
+
+<body class="bg-gray-50">
+  <navbar-component></navbar-component>
+
+  <!-- Hero Section -->
+  <div class="relative">
+    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="Dubai Skyline" class="w-full h-96 object-cover" />
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl text-white font-bold max-w-4xl">Flights to Dubai</h1>
+        <p class="text-xl text-white mt-4">Discover the best flight deals to the city of luxury</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flight Listings -->
+  <div class="container mx-auto px-4 py-12">
+    <div class="grid gap-8">
+      <!-- Flight Card 1 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Emirates_logo.svg" alt="Emirates Airlines" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Emirates Airlines</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.8 (2,450 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$750</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">10:30 AM</p>
+              <p class="text-sm text-gray-500">New York (JFK)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">13h 15m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">8:45 AM</p>
+              <p class="text-sm text-gray-500">Dubai (DXB)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 2 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://w7.pngwing.com/pngs/868/375/png-transparent-doha-flight-qatar-airways-gatwick-airport-airline-travel-text-logo-flight-thumbnail.png" alt="Qatar Airways" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Qatar Airways</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.7 (1,890 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$820</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">2:15 PM</p>
+              <p class="text-sm text-gray-500">New York (JFK)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">14h 30m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">11:45 AM</p>
+              <p class="text-sm text-gray-500">Dubai (DXB)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 3 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://as1.ftcdn.net/v2/jpg/03/92/12/10/1000_F_392121025_BZHVI0BBWH5eR75b7cNpRED7zt4YHtuJ.jpg" alt="Turkish Airlines" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Turkish Airlines</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.6 (1,560 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$680</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">9:20 AM</p>
+              <p class="text-sm text-gray-500">New York (JFK)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">15h 45m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">7:05 AM</p>
+              <p class="text-sm text-gray-500">Dubai (DXB)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 4 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/EY-Etihad-Airways-new-logo-En.jpg" alt="Etihad Airways" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Etihad Airways</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.7 (2,100 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$890</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">11:45 AM</p>
+              <p class="text-sm text-gray-500">New York (JFK)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">13h 20m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">9:05 AM</p>
+              <p class="text-sm text-gray-500">Dubai (DXB)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 5 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://brandlogos.net/wp-content/uploads/2023/08/air_india-logo_brandlogos.net_qmt2e.png" alt="Air India" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">Air India</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.3 (980 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$710</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">1:30 PM</p>
+              <p class="text-sm text-gray-500">New York (JFK)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">16h 15m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">10:45 AM</p>
+              <p class="text-sm text-gray-500">Dubai (DXB)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Flight Card 6 -->
+      <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+              <img src="https://www.careersinaerospace.com/wp-content/uploads/2020/01/British-Airways-logo-ribbon-logo-219x286.png" alt="British Airways" class="h-12" />
+              <div>
+                <h3 class="font-bold text-xl">British Airways</h3>
+                <div class="flex items-center mt-1">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <span class="ml-1 text-sm text-gray-600">4.5 (1,780 reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="text-right">
+              <p class="text-2xl font-bold text-purple-600">$950</p>
+              <p class="text-sm text-gray-500">Round Trip</p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-between items-center">
+            <div>
+              <p class="text-sm text-gray-500">Departure</p>
+              <p class="font-semibold">8:15 PM</p>
+              <p class="text-sm text-gray-500">New York (JFK)</p>
+            </div>
+            <div class="flex-1 mx-8">
+              <div class="flex items-center">
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+                <i class="fas fa-plane text-purple-600 mx-4"></i>
+                <div class="h-0.5 flex-1 bg-gray-300"></div>
+              </div>
+              <p class="text-center text-sm text-gray-500 mt-2">14h 50m</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Arrival</p>
+              <p class="font-semibold">6:05 PM</p>
+              <p class="text-sm text-gray-500">Dubai (DXB)</p>
+            </div>
+          </div>
+          <button class="mt-6 w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">Book Now</button>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <footer-component></footer-component>
+</body>
+</html>
