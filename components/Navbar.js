@@ -111,7 +111,7 @@ class NavbarComponent extends HTMLElement {
             <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible 
                         group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
               <div class="py-1">
-                <a href="${this.baseUrl}/Login.html" 
+                <a href="${this.baseUrl}/LogIn.html" 
                    class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
                   <i class="fas fa-sign-in-alt w-5 h-5 mr-2"></i>
                   Sign In
