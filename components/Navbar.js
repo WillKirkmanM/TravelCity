@@ -99,10 +99,31 @@ class NavbarComponent extends HTMLElement {
               </div>
             </div>
           </div>
-          <button class="flex items-center">
-            <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile"
-              class="w-8 h-8 md:w-10 md:h-10 rounded-full" />
-          </button>
+          <div class="relative group">
+            <button class="flex items-center focus:outline-none" 
+                    aria-expanded="false" 
+                    aria-haspopup="true">
+              <img src="https://avatars.githubusercontent.com/u/98240335?v=4" 
+                   alt="Profile"
+                   class="w-8 h-8 md:w-10 md:h-10 rounded-full hover:ring-2 hover:ring-purple-500" />
+            </button>
+        
+            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible 
+                        group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100]">
+              <div class="py-1">
+                <a href="${this.baseUrl}/Login.html" 
+                   class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                  <i class="fas fa-sign-in-alt w-5 h-5 mr-2"></i>
+                  Sign In
+                </a>
+                <a href="${this.baseUrl}/Signup.html" 
+                   class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                  <i class="fas fa-user-plus w-5 h-5 mr-2"></i>
+                  Sign Up
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         <button 
           id="hamburgerBtn"
@@ -134,7 +155,40 @@ class NavbarComponent extends HTMLElement {
         <a href="${this.baseUrl}/help.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Support</a>
         <hr class="my-2">
         <div class="flex items-center space-x-4 py-2">
-          <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile" class="w-8 h-8 rounded-full" />
+          <div class="relative group">
+            <button class="flex items-center focus:outline-none" aria-expanded="false" aria-haspopup="true">
+              <img src="https://avatars.githubusercontent.com/u/98240335?v=4" 
+                   alt="Profile" 
+                   class="w-8 h-8 rounded-full hover:ring-2 hover:ring-purple-500" />
+            </button>
+          
+            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible 
+                        group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="py-1">
+                <a href="${this.baseUrl}/profile" 
+                   class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                  <i class="fas fa-user w-5 h-5 mr-2"></i>
+                  View Profile
+                </a>
+                <a href="${this.baseUrl}/settings" 
+                   class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                  <i class="fas fa-cog w-5 h-5 mr-2"></i>
+                  Settings
+                </a>
+                <a href="${this.baseUrl}/help" 
+                   class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                  <i class="fas fa-question-circle w-5 h-5 mr-2"></i>
+                  Help
+                </a>
+                <hr class="my-1 border-gray-200">
+                <button onclick="handleSignOut()" 
+                        class="w-full flex items-center px-4 py-2 text-sm text-red-600 hover:bg-red-50">
+                  <i class="fas fa-sign-out-alt w-5 h-5 mr-2"></i>
+                  Sign Out
+                </button>
+              </div>
+            </div>
+          </div>          
           <span class="text-sm">My Profile</span>
         </div>
       </div>
