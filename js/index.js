@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const countries = [
         "United States", "Canada", "United Kingdom", "France", "Germany", 
         "Italy", "Spain", "Japan", "Australia", "Brazil", "Mexico", 
-        "China", "India", "South Africa", "Egypt", "Greece"
+        "China", "India", "South Africa", "Egypt", "Greece", "Turkey",
+        "Portugal"
     ];
 
     // Populate datalist
