@@ -1,4 +1,19 @@
 class NavbarComponent extends HTMLElement {
+  constructor() {
+    super();
+    // Set base URL depending on environment
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === "127.0.0.1";
+    
+    // Get current path depth
+    const pathDepth = window.location.pathname.split('/').filter(Boolean).length;
+    const upNavigate = isLocalhost ? '../'.repeat(pathDepth) : '';
+    
+    // Remove trailing slash to prevent double slash
+    this.baseUrl = isLocalhost 
+      ? (upNavigate || '.').replace(/\/$/, '') // Remove trailing slash in dev
+      : '/TravelCity';    // Use absolute path in production
+}
+
   connectedCallback() {
     this.innerHTML = `
       <style>
@@ -30,15 +45,15 @@ class NavbarComponent extends HTMLElement {
         }
       </style>
       <nav class="flex items-center justify-between px-4 py-2 fixed w-full top-0 left-0 z-50">
-        <a href="./">
-          <img src="https://avatars.githubusercontent.com/u/138057124?s=200&v=4 " class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
+        <a href="${this.baseUrl}/">
+          <img src="https://avatars.githubusercontent.com/u/138057124?s=200&v=4" class="w-8 h-8 md:w-12 md:h-12 rounded-full" alt="TravelCity Logo" />
         </a>
         <div class="hidden md:flex items-center space-x-6">
-        <a href="./Newsroom.html" class="text-sm text-white hover:text-purple-400 transition-colors">Newsroom</a>
-        <a href="./TravelCityYourHome.html" class="text-sm text-white hover:text-purple-400 transition-colors">TravelCity Your Home</a>
-        <a href="./CommunityForum.html" class="text-sm text-white hover:text-purple-400 transition-colors">Community Forum</a>
-        <a href="./about.html" class="text-sm text-white hover:text-purple-400 transition-colors">About</a>
-        <a href="./help.html" class="text-sm text-white hover:text-purple-400 transition-colors">Support</a>
+        <a href="${this.baseUrl}/Newsroom.html" class="text-sm text-white hover:text-purple-400 transition-colors">Newsroom</a>
+        <a href="${this.baseUrl}/TravelCityYourHome.html" class="text-sm text-white hover:text-purple-400 transition-colors">TravelCity Your Home</a>
+        <a href="${this.baseUrl}/CommunityForum.html" class="text-sm text-white hover:text-purple-400 transition-colors">Community Forum</a>
+        <a href="${this.baseUrl}/about.html" class="text-sm text-white hover:text-purple-400 transition-colors">About</a>
+        <a href="${this.baseUrl}/help.html" class="text-sm text-white hover:text-purple-400 transition-colors">Support</a>
           <div class="relative group">
             <button 
               class="text-white hover:text-purple-400 transition-colors flex items-center"
@@ -112,11 +127,11 @@ class NavbarComponent extends HTMLElement {
         </button>
       </nav>
       <div id="mobileMenu" class="md:hidden bg-white fixed top-[48px] left-0 right-0 shadow-lg p-4 z-40">
-        <a href="./Newsroom.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Newsroom</a>
-        <a href="./TravelCityYourHome.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">TravelCity Your Home</a>
-        <a href="./CommunityForum.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Community Forum</a>
-        <a href="./about.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">About</a>
-        <a href="./help.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Support</a>
+        <a href="${this.baseUrl}/Newsroom.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Newsroom</a>
+        <a href="${this.baseUrl}/TravelCityYourHome.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">TravelCity Your Home</a>
+        <a href="${this.baseUrl}/CommunityForum.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Community Forum</a>
+        <a href="${this.baseUrl}/about.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">About</a>
+        <a href="${this.baseUrl}/help.html" class="block py-2 text-sm text-gray-700 hover:bg-purple-50">Support</a>
         <hr class="my-2">
         <div class="flex items-center space-x-4 py-2">
           <img src="https://avatars.githubusercontent.com/u/98240335?v=4" alt="Profile" class="w-8 h-8 rounded-full" />
