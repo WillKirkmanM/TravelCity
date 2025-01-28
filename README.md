@@ -3,6 +3,20 @@
 </p>
 <h1 align="center">Travel City</h1>
 
+<p align="center">TravelCity, the modern and sleek way to plan out your next trip with less than 3 clicks</p>
+
+<h4 align="center">
+  <a href="https://WillKirkmanM.github.io/TravelCity">See it Yourself</a>
+</h4>
+
+<p>
+  <img src="https://github.com/user-attachments/assets/de83f2bb-4f0b-423d-a124-157377cd6cec" />
+  <img src="https://github.com/user-attachments/assets/b5ea1a3c-712e-4b6d-9245-d37a1bb8a45e" />
+  <img src="https://github.com/user-attachments/assets/bae44255-d9ec-4555-a56f-28158e41a6ed" />
+  <img src="https://github.com/user-attachments/assets/760df40e-c334-4c09-bfcc-b9905c6e5c39" />
+  <img src="https://github.com/user-attachments/assets/6d0fad95-2da6-48f9-ba00-79ca89132185" />
+</p>
+
 ## 🌐 Live Demo
 <a href="https://willkirkmanm.github.io/TravelCity/" target="_blank" rel="noopener noreferrer">Travel City Website</a>
 
